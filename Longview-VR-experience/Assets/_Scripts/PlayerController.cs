@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         //Gets the controller input for left and right
         Vector3 movementDirection = Player.instance.hmdTransform.TransformDirection(new Vector3(touchpadInput.axis.x, 0, touchpadInput.axis.y));
         //Execute the movement based on input, speed and time
-        transform.position += Vector3.ProjectOnPlane(Time.deltaTime * movementDirection * speed, Vector3.up);
+        transform.position += Time.deltaTime * movementDirection * speed;
     }
 
     private void Turn()
