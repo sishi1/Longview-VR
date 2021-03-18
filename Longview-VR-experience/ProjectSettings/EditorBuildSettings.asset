@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/Scenes/Crime scene.unity
+    guid: 7c989d72a35dd2840be7a7b7dcdf797e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bc881e86dae582c49a1a07e0f75b924c, type: 2}
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 2ed7ac80f257bce4ca8857f3de393d45, type: 2}

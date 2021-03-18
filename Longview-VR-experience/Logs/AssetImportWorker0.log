@@ -15,12 +15,12 @@ D:/Unity projects/Longview-VR/Longview-VR-experience
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50350
+51735
 Successfully changed project path to: D:/Unity projects/Longview-VR/Longview-VR-experience
 D:/Unity projects/Longview-VR/Longview-VR-experience
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 81.32 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 1.38 ms.
+Refreshing native plugins compatible for Editor in 73.39 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 1.41 ms.
 Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/Unity projects/Longview-VR/Longview-VR-experience/Assets
@@ -35,25 +35,25 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002443 seconds.
+Registered in 0.002689 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 62.99 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Refreshing native plugins compatible for Editor in 60.52 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.279 seconds
+- Completed reload, in  1.306 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003380 seconds.
+Registered in 0.002964 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 63.46 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 62.27 ms, found 6 plugins.
 Preloading 1 native plugins for Editor in 0.07 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -69,37 +69,61 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.293 seconds
+- Completed reload, in  1.243 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.66 ms, found 6 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.67 ms, found 6 plugins.
 Preloading 1 native plugins for Editor in 0.06 ms.
 Unloading 2691 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 120.7 MB.
-System memory in use after: 117.8 MB.
+System memory in use before: 120.6 MB.
+System memory in use after: 117.7 MB.
 
 Unloading 58 unused Assets to reduce memory usage. Loaded Objects now: 3093.
-Total: 4.541100 ms (FindLiveObjects: 0.313400 ms CreateObjectMapping: 0.340400 ms MarkObjects: 2.358700 ms  DeleteObjects: 1.511600 ms)
+Total: 3.976800 ms (FindLiveObjects: 0.358800 ms CreateObjectMapping: 0.204000 ms MarkObjects: 1.857600 ms  DeleteObjects: 1.555200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Crime scene.unity
-  artifactKey: Guid(7c989d72a35dd2840be7a7b7dcdf797e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Crime scene.unity using Guid(7c989d72a35dd2840be7a7b7dcdf797e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3351666ff5bc0751b60334276e365d74') in 0.014913 seconds
-  Import took 0.020069 seconds .
+  path: Assets/Models/Living room/Couch.fbx
+  artifactKey: Guid(3b1f992f5ed5e074a9d0daaaecc4b921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/Couch.fbx using Guid(3b1f992f5ed5e074a9d0daaaecc4b921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92c823c12c9c7ba170f875dcbf8a7f5d') in 0.261894 seconds
+  Import took 0.267183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.031766 seconds.
+  path: Assets/Models/Living room/Couch.fbx
+  artifactKey: Guid(3b1f992f5ed5e074a9d0daaaecc4b921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/Couch.fbx using Guid(3b1f992f5ed5e074a9d0daaaecc4b921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '869c3a9603fc38c69e4ec4c3e6a4e2e7') in 0.081762 seconds
+  Import took 0.087688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.400567 seconds.
+  path: Assets/Models/Living room/Couch.fbx
+  artifactKey: Guid(3b1f992f5ed5e074a9d0daaaecc4b921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/Couch.fbx using Guid(3b1f992f5ed5e074a9d0daaaecc4b921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c2d0c75605f23a9b9d10d3753de0d3a') in 0.072472 seconds
+  Import took 0.078626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.605909 seconds.
+  path: Assets/Models/Living room/Couch.fbx
+  artifactKey: Guid(3b1f992f5ed5e074a9d0daaaecc4b921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/Couch.fbx using Guid(3b1f992f5ed5e074a9d0daaaecc4b921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ef63ccfd8477b8f2b0c3f30f3ea735') in 0.069657 seconds
+  Import took 0.075381 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003434 seconds.
+Registered in 0.003572 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 6.36 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
+Refreshing native plugins compatible for Editor in 0.75 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
@@ -110,306 +134,147 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  2.668 seconds
+- Completed reload, in  1.489 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 7.76 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 2643 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 118.3 MB.
-System memory in use after: 115.5 MB.
-
-Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 3096.
-Total: 50.620000 ms (FindLiveObjects: 3.951900 ms CreateObjectMapping: 0.793300 ms MarkObjects: 24.732100 ms  DeleteObjects: 21.140900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 382.598787 seconds.
-  path: Assets/Models/Crime scene
-  artifactKey: Guid(157a5dbd35d680f498d11c2ef5ca03b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Crime scene using Guid(157a5dbd35d680f498d11c2ef5ca03b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b2658934d3588af94a7c312ec7092d8') in 0.014831 seconds
-  Import took 0.020996 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.875994 seconds.
-  path: Assets/Models/Living room
-  artifactKey: Guid(d51fa84447dd3dd4b822e6d3f704b1b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Living room using Guid(d51fa84447dd3dd4b822e6d3f704b1b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6af63640ca11075ea1dd4b5f949a0137') in 0.009184 seconds
-  Import took 0.014642 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.009708 seconds.
-  path: Assets/Models/Kitche
-  artifactKey: Guid(200417ececb91d643a1c59177704cf4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitche using Guid(200417ececb91d643a1c59177704cf4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3235e7ec0b400ff87356ba37086cc99e') in 0.008178 seconds
-  Import took 0.014879 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.502968 seconds.
-  path: Assets/Models/Kitchen
-  artifactKey: Guid(200417ececb91d643a1c59177704cf4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen using Guid(200417ececb91d643a1c59177704cf4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd19fc936d559d10301ecd186b3796ea') in 0.008167 seconds
-  Import took 0.015303 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.287299 seconds.
-  path: Assets/Models/Living room/Chair.fbx
-  artifactKey: Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Living room/Chair.fbx using Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f58dc50d9af47e93fe8976ca52a6063') in 0.238363 seconds
-  Import took 0.244375 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/Models/Living room/TV.fbx
-  artifactKey: Guid(a94a006800bd43a4a86fc8d3ccaa065a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Living room/TV.fbx using Guid(a94a006800bd43a4a86fc8d3ccaa065a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245e9706afa9d017882b607c4f82cbb3') in 0.057473 seconds
-  Import took 0.063019 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.923732 seconds.
-  path: Assets/Models/Kitchen/kitchen_cabinets.fbx
-  artifactKey: Guid(d76ca24869483a144bbee0bfc437854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/kitchen_cabinets.fbx using Guid(d76ca24869483a144bbee0bfc437854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd0c2f1a835b87de2c0c7b87f955fd42') in 0.444140 seconds
-  Import took 0.450969 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/Models/Kitchen/tap.fbx
-  artifactKey: Guid(aed15a566b03fbb4dac319c6d4089d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/tap.fbx using Guid(aed15a566b03fbb4dac319c6d4089d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88aeb34d2ca3d46dea0586136a9f0b55') in 0.077194 seconds
-  Import took 0.083480 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/Models/Kitchen/kitchen_island.fbx
-  artifactKey: Guid(795c9581f61e022409bed8772d73dbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/kitchen_island.fbx using Guid(795c9581f61e022409bed8772d73dbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6343a2ded966ad0883d39beeed0c5fa') in 0.352978 seconds
-  Import took 0.359330 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 41.698901 seconds.
-  path: Assets/Models/Living room/TV.fbx
-  artifactKey: Guid(a94a006800bd43a4a86fc8d3ccaa065a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Living room/TV.fbx using Guid(a94a006800bd43a4a86fc8d3ccaa065a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dcdef2624fc8a9826267a3cecd0b6cf') in 0.053251 seconds
-  Import took 0.059241 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.942793 seconds.
-  path: Assets/Models/Living room/Chair.fbx
-  artifactKey: Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Living room/Chair.fbx using Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79eb78dfded6b95255c9080eaa454c2b') in 0.085555 seconds
-  Import took 0.091783 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.573157 seconds.
-  path: Assets/Models/Living room/Chair.fbx
-  artifactKey: Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Living room/Chair.fbx using Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e96ad03f7de90ea169ae41971d7ee2d9') in 0.068685 seconds
-  Import took 0.075042 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.963053 seconds.
-  path: Assets/Models/Living room/Chair.fbx
-  artifactKey: Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Living room/Chair.fbx using Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c942a28958305e9d6afb15ed0117f9a2') in 0.070506 seconds
-  Import took 0.076842 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.646191 seconds.
-  path: Assets/Models/Living room/Chair.fbx
-  artifactKey: Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Living room/Chair.fbx using Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d2ebd1a862c10d9d1a7ba35db452771') in 0.083151 seconds
-  Import took 0.105634 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.117363 seconds.
-  path: Assets/Models/Living room/Chair.fbx
-  artifactKey: Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Living room/Chair.fbx using Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ed758e408197eb822c8970e8c99a64e') in 0.068287 seconds
-  Import took 0.074195 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.187285 seconds.
-  path: Assets/Models/Living room/Chair.fbx
-  artifactKey: Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Living room/Chair.fbx using Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a917c022f2725d16df1d82cd067d5c') in 0.070815 seconds
-  Import took 0.077315 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 156.829289 seconds.
-  path: Assets/Models/Living room/TV.fbx
-  artifactKey: Guid(a94a006800bd43a4a86fc8d3ccaa065a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Living room/TV.fbx using Guid(a94a006800bd43a4a86fc8d3ccaa065a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '816aa3a127cf5dd640199830a3db5069') in 0.057056 seconds
-  Import took 0.062708 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.067271 seconds.
-  path: Assets/Models/Living room/TV.fbx
-  artifactKey: Guid(a94a006800bd43a4a86fc8d3ccaa065a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Living room/TV.fbx using Guid(a94a006800bd43a4a86fc8d3ccaa065a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4e83def016242facc0f899698327f15') in 0.076533 seconds
-  Import took 0.083108 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 44.457265 seconds.
-  path: Assets/Models/Living room/TV.fbx
-  artifactKey: Guid(a94a006800bd43a4a86fc8d3ccaa065a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Living room/TV.fbx using Guid(a94a006800bd43a4a86fc8d3ccaa065a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb120fa0d2d3b3fae856c49d39e2ca2a') in 0.062303 seconds
-  Import took 0.069060 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004538 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.46 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 2.03 ms, found 6 plugins.
 Preloading 1 native plugins for Editor in 0.12 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.587 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
 Unloading 2643 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 122.2 MB.
-System memory in use after: 119.3 MB.
+System memory in use before: 121.7 MB.
+System memory in use after: 118.9 MB.
 
-Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 3142.
-Total: 6.365800 ms (FindLiveObjects: 0.439700 ms CreateObjectMapping: 0.194800 ms MarkObjects: 2.872000 ms  DeleteObjects: 2.857000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 408.488997 seconds.
-  path: Assets/Models/Living room/Chair.fbx
-  artifactKey: Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Living room/Chair.fbx using Guid(ff437d23eb7ec6b44af2b404649e1291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a93988a5dca682b4f552442e7835b4fd') in 0.176462 seconds
-  Import took 0.183327 seconds .
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 3139.
+Total: 9.904800 ms (FindLiveObjects: 1.050400 ms CreateObjectMapping: 1.490100 ms MarkObjects: 4.591700 ms  DeleteObjects: 2.769700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 271.275979 seconds.
-  path: Assets/Models/Kitchen/kitchen_cabinets.fbx
-  artifactKey: Guid(d76ca24869483a144bbee0bfc437854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/kitchen_cabinets.fbx using Guid(d76ca24869483a144bbee0bfc437854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0acb790e9179935c892a06408c528a22') in 0.497047 seconds
-  Import took 0.505451 seconds .
+  Time since last request: 968.153758 seconds.
+  path: Assets/Models/Living room/carpet.fbx
+  artifactKey: Guid(e4e041f041103e94bb345d6d2d830cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/carpet.fbx using Guid(e4e041f041103e94bb345d6d2d830cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '252ce1e84847feeac1019b449d18059f') in 0.152947 seconds
+  Import took 0.159355 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.443440 seconds.
-  path: Assets/Models/Kitchen/kitchen_cabinets.fbx
-  artifactKey: Guid(d76ca24869483a144bbee0bfc437854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/kitchen_cabinets.fbx using Guid(d76ca24869483a144bbee0bfc437854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e423847fb4ab81a29a3f8f796f1a90') in 0.429327 seconds
-  Import took 0.435824 seconds .
+  Time since last request: 8.163644 seconds.
+  path: Assets/Models/Kitchen/sink_v2.fbx
+  artifactKey: Guid(61d7ab2e4b93b5c449f085fe62e1820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kitchen/sink_v2.fbx using Guid(61d7ab2e4b93b5c449f085fe62e1820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c9c2bb4fc383ceead855de7a730d88') in 0.087956 seconds
+  Import took 0.094429 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.998883 seconds.
-  path: Assets/Models/Kitchen/kitchen_cabinets.fbx
-  artifactKey: Guid(d76ca24869483a144bbee0bfc437854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/kitchen_cabinets.fbx using Guid(d76ca24869483a144bbee0bfc437854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0628bbc9a4ffc79d148ea54531fa7953') in 0.499401 seconds
-  Import took 0.505849 seconds .
+  Time since last request: 2.002989 seconds.
+  path: Assets/Models/Kitchen/trashcan.fbx
+  artifactKey: Guid(38a71229d6bcec74895bdfe62f0d1dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kitchen/trashcan.fbx using Guid(38a71229d6bcec74895bdfe62f0d1dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b262bca7d8e03c6c7e39619b7229abc4') in 0.090226 seconds
+  Import took 0.095759 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.801606 seconds.
-  path: Assets/Models/Kitchen/kitchen_cabinets.fbx
-  artifactKey: Guid(d76ca24869483a144bbee0bfc437854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/kitchen_cabinets.fbx using Guid(d76ca24869483a144bbee0bfc437854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad52ad7411b7197416bb13e77c40b53a') in 0.427864 seconds
-  Import took 0.434510 seconds .
+  Time since last request: 17.259591 seconds.
+  path: Assets/Models/Living room/carpet.fbx
+  artifactKey: Guid(e4e041f041103e94bb345d6d2d830cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/carpet.fbx using Guid(e4e041f041103e94bb345d6d2d830cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b17d87360615df9cb5044619ad2eb6c0') in 0.041098 seconds
+  Import took 0.047637 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.048915 seconds.
-  path: Assets/Models/Kitchen/kitchen_cabinets.fbx
-  artifactKey: Guid(d76ca24869483a144bbee0bfc437854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/kitchen_cabinets.fbx using Guid(d76ca24869483a144bbee0bfc437854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '838081706abdf1aea313fee6a6b4b406') in 0.463084 seconds
-  Import took 0.471088 seconds .
+  Time since last request: 6.100954 seconds.
+  path: Assets/Models/Living room/carpet.fbx
+  artifactKey: Guid(e4e041f041103e94bb345d6d2d830cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/carpet.fbx using Guid(e4e041f041103e94bb345d6d2d830cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371f7229614539b88f3885b0f8098768') in 0.041567 seconds
+  Import took 0.047749 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.473898 seconds.
-  path: Assets/Models/Kitchen/kitchen_cabinets.fbx
-  artifactKey: Guid(d76ca24869483a144bbee0bfc437854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/kitchen_cabinets.fbx using Guid(d76ca24869483a144bbee0bfc437854c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85e2881169174600175ffe026cce75b') in 0.440512 seconds
-  Import took 0.446988 seconds .
+  Time since last request: 17.763361 seconds.
+  path: Assets/Models/Living room/carpet.fbx
+  artifactKey: Guid(e4e041f041103e94bb345d6d2d830cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/carpet.fbx using Guid(e4e041f041103e94bb345d6d2d830cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaf63f7ebc4faf850a92fa6854588bcb') in 0.040626 seconds
+  Import took 0.047424 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 37.922064 seconds.
-  path: Assets/Models/Kitchen/kitchen_island.fbx
-  artifactKey: Guid(795c9581f61e022409bed8772d73dbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/kitchen_island.fbx using Guid(795c9581f61e022409bed8772d73dbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc8e73f69c4342321c7fd7e10d3f3316') in 0.443967 seconds
-  Import took 0.450225 seconds .
+  Time since last request: 6.862679 seconds.
+  path: Assets/Models/Living room/carpet.fbx
+  artifactKey: Guid(e4e041f041103e94bb345d6d2d830cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/carpet.fbx using Guid(e4e041f041103e94bb345d6d2d830cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ea8e5ca4aaba5719adcaffd8d3f1a7f') in 0.042490 seconds
+  Import took 0.049633 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 40.289048 seconds.
-  path: Assets/Models/Kitchen/tap.fbx
-  artifactKey: Guid(aed15a566b03fbb4dac319c6d4089d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/tap.fbx using Guid(aed15a566b03fbb4dac319c6d4089d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1610d4649f9b497c021cbe7b63504d2') in 0.110230 seconds
-  Import took 0.117728 seconds .
+  Time since last request: 67.671795 seconds.
+  path: Assets/Models/Kitchen/sink_v2.fbx
+  artifactKey: Guid(61d7ab2e4b93b5c449f085fe62e1820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kitchen/sink_v2.fbx using Guid(61d7ab2e4b93b5c449f085fe62e1820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c0a6d7114b33d350d41888f5593a57b') in 0.079515 seconds
+  Import took 0.086923 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.970482 seconds.
-  path: Assets/Models/Kitchen/tap.fbx
-  artifactKey: Guid(aed15a566b03fbb4dac319c6d4089d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/tap.fbx using Guid(aed15a566b03fbb4dac319c6d4089d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54d0fb475809d8d8ebd3a80a02b259fe') in 0.081770 seconds
-  Import took 0.088422 seconds .
+  Time since last request: 5.552659 seconds.
+  path: Assets/Models/Kitchen/sink_v2.fbx
+  artifactKey: Guid(61d7ab2e4b93b5c449f085fe62e1820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kitchen/sink_v2.fbx using Guid(61d7ab2e4b93b5c449f085fe62e1820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb2aa4f8ae37ff31899e953495983c4b') in 0.079233 seconds
+  Import took 0.085391 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.847799 seconds.
-  path: Assets/Models/Kitchen/tap.fbx
-  artifactKey: Guid(aed15a566b03fbb4dac319c6d4089d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/tap.fbx using Guid(aed15a566b03fbb4dac319c6d4089d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0004d38302187c2cdff46ce3b54d29f0') in 0.103298 seconds
-  Import took 0.110150 seconds .
+  Time since last request: 20.382853 seconds.
+  path: Assets/Models/Kitchen/sink_v2.fbx
+  artifactKey: Guid(61d7ab2e4b93b5c449f085fe62e1820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kitchen/sink_v2.fbx using Guid(61d7ab2e4b93b5c449f085fe62e1820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14929f0600a80ae6bd800e8ca5db929a') in 0.077566 seconds
+  Import took 0.085025 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.361381 seconds.
-  path: Assets/Models/Kitchen/tap.fbx
-  artifactKey: Guid(aed15a566b03fbb4dac319c6d4089d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/tap.fbx using Guid(aed15a566b03fbb4dac319c6d4089d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50485324958eef573c2efbce8ad4bcad') in 0.084003 seconds
-  Import took 0.090890 seconds .
+  Time since last request: 19.016283 seconds.
+  path: Assets/Models/Kitchen/sink_v2.fbx
+  artifactKey: Guid(61d7ab2e4b93b5c449f085fe62e1820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kitchen/sink_v2.fbx using Guid(61d7ab2e4b93b5c449f085fe62e1820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a79781687608ec862f6a85eafe86a5') in 0.071821 seconds
+  Import took 0.088130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.666232 seconds.
+  path: Assets/Models/Kitchen/sink_v2.fbx
+  artifactKey: Guid(61d7ab2e4b93b5c449f085fe62e1820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kitchen/sink_v2.fbx using Guid(61d7ab2e4b93b5c449f085fe62e1820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a5a85f18339b83674dcb36d48b54210') in 0.067754 seconds
+  Import took 0.072850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 996.388680 seconds.
+  path: Assets/Models/Kitchen/kitchen_cabinets_v5.fbx
+  artifactKey: Guid(72cf6b324a2aee44ca0c62e8280e2c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kitchen/kitchen_cabinets_v5.fbx using Guid(72cf6b324a2aee44ca0c62e8280e2c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1402c8f991b3c7fd2a9d9e8b83566198') in 0.301976 seconds
+  Import took 0.311548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.066091 seconds.
+  path: Assets/Models/Kitchen/kitchen_cabinets_v5.fbx
+  artifactKey: Guid(72cf6b324a2aee44ca0c62e8280e2c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kitchen/kitchen_cabinets_v5.fbx using Guid(72cf6b324a2aee44ca0c62e8280e2c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e056e0d74d198fbe571e9ae05fae7d4f') in 0.320326 seconds
+  Import took 0.328369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 176.802837 seconds.
+  path: Assets/Models/Kitchen/trashcan.fbx
+  artifactKey: Guid(38a71229d6bcec74895bdfe62f0d1dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kitchen/trashcan.fbx using Guid(38a71229d6bcec74895bdfe62f0d1dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '274dd5f18b8aef79ea62c600b7a2801e') in 0.102693 seconds
+  Import took 0.108776 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004319 seconds.
+Registered in 0.004676 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 0.99 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
@@ -420,16 +285,222 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.682 seconds
+- Completed reload, in  1.407 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.10 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
+Refreshing native plugins compatible for Editor in 0.89 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
 Unloading 2643 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 122.9 MB.
-System memory in use after: 120.0 MB.
+System memory in use before: 122.1 MB.
+System memory in use after: 119.2 MB.
 
-Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 3146.
-Total: 12.683600 ms (FindLiveObjects: 0.476400 ms CreateObjectMapping: 0.295300 ms MarkObjects: 8.796700 ms  DeleteObjects: 3.112800 ms)
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 3143.
+Total: 6.981100 ms (FindLiveObjects: 0.485000 ms CreateObjectMapping: 0.242000 ms MarkObjects: 3.091600 ms  DeleteObjects: 3.160500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 484.405846 seconds.
+  path: Assets/Models/Kitchen/koelkast.obj
+  artifactKey: Guid(1723f626d20b27945a021f4b2ee896f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kitchen/koelkast.obj using Guid(1723f626d20b27945a021f4b2ee896f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a82fb199d76d0ac624e2962a88a1a66') in 0.169305 seconds
+  Import took 0.176971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.138519 seconds.
+  path: Assets/Models/Kitchen/koelkast.obj
+  artifactKey: Guid(1723f626d20b27945a021f4b2ee896f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kitchen/koelkast.obj using Guid(1723f626d20b27945a021f4b2ee896f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61848df7a91765667ac13e6a7b506c90') in 0.050376 seconds
+  Import took 0.056971 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004789 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.504 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 2643 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.1 MB.
+System memory in use after: 119.2 MB.
+
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 3147.
+Total: 6.992200 ms (FindLiveObjects: 0.502000 ms CreateObjectMapping: 0.350400 ms MarkObjects: 2.933700 ms  DeleteObjects: 3.203900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 777.272099 seconds.
+  path: Assets/Models/Crime scene/door_v4.fbx
+  artifactKey: Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Crime scene/door_v4.fbx using Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02b11d8bfa3fb086a7db049302b4b40a') in 0.168342 seconds
+  Import took 0.175047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.686615 seconds.
+  path: Assets/Models/Living room/Plant.fbx
+  artifactKey: Guid(348319f66d4b07841a34508da1e5d06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/Plant.fbx using Guid(348319f66d4b07841a34508da1e5d06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf5db1936dda50a85250a9c2d34c75f1') in 0.278886 seconds
+  Import took 0.284581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000408 seconds.
+  path: Assets/Models/Living room/plant2.fbx
+  artifactKey: Guid(cc9d72265354b32419d008f9fbb7cb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/plant2.fbx using Guid(cc9d72265354b32419d008f9fbb7cb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfbdaf5ef1e0ddbe8069d66ffab8fe07') in 0.048135 seconds
+  Import took 0.054517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.315534 seconds.
+  path: Assets/Models/Crime scene/door_v4.fbx
+  artifactKey: Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Crime scene/door_v4.fbx using Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '810ab6cb6f4387d94ffb8b47068d6649') in 0.055395 seconds
+  Import took 0.060502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.169834 seconds.
+  path: Assets/Models/Crime scene/door_v4.fbx
+  artifactKey: Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Crime scene/door_v4.fbx using Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3b091cdf9e78a5f02629cab620394c') in 0.057381 seconds
+  Import took 0.063345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.233410 seconds.
+  path: Assets/Models/Crime scene/door_v4.fbx
+  artifactKey: Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Crime scene/door_v4.fbx using Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5881452b74f3ab775994a392c408d89c') in 0.063140 seconds
+  Import took 0.070509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.481818 seconds.
+  path: Assets/Models/Crime scene/door_v4.fbx
+  artifactKey: Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Crime scene/door_v4.fbx using Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb6f7dc73b8286a69a8a6b8bdb2d325d') in 0.159544 seconds
+  Import took 0.165162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002027 seconds.
+  path: Assets/Models/Crime scene/door_v4.fbx
+  artifactKey: Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Crime scene/door_v4.fbx using Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb6f7dc73b8286a69a8a6b8bdb2d325d') in 0.061074 seconds
+  Import took 0.067983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.672822 seconds.
+  path: Assets/Models/Crime scene/door_v4.fbx
+  artifactKey: Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Crime scene/door_v4.fbx using Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd18abc0e118d64b4aa87828b33f7f9d6') in 0.059337 seconds
+  Import took 0.065383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 313.232693 seconds.
+  path: Assets/Models/Living room/plant2.fbx
+  artifactKey: Guid(cc9d72265354b32419d008f9fbb7cb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/plant2.fbx using Guid(cc9d72265354b32419d008f9fbb7cb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a45bb9aeaf065efda72532845eefbd7') in 0.040879 seconds
+  Import took 0.046618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 101.230079 seconds.
+  path: Assets/Models/Living room/plant2.fbx
+  artifactKey: Guid(cc9d72265354b32419d008f9fbb7cb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/plant2.fbx using Guid(cc9d72265354b32419d008f9fbb7cb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fbb736326f15b5dc9fdd4145eeac440') in 0.042838 seconds
+  Import took 0.049388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.291678 seconds.
+  path: Assets/Models/Living room/plant2.fbx
+  artifactKey: Guid(cc9d72265354b32419d008f9fbb7cb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/plant2.fbx using Guid(cc9d72265354b32419d008f9fbb7cb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa91bf18d265346ed0c61a7dd5fc9fc5') in 0.041004 seconds
+  Import took 0.048566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 460.018763 seconds.
+  path: Assets/Models/Living room/Plant.fbx
+  artifactKey: Guid(348319f66d4b07841a34508da1e5d06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/Plant.fbx using Guid(348319f66d4b07841a34508da1e5d06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f12e94bc4928c7c78cef788adf36cb37') in 0.045937 seconds
+  Import took 0.052058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4132.726195 seconds.
+  path: Assets/Models/Living room/Couch.fbx
+  artifactKey: Guid(3b1f992f5ed5e074a9d0daaaecc4b921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/Couch.fbx using Guid(3b1f992f5ed5e074a9d0daaaecc4b921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ae40a0375025bc55d8ea79dc2930949') in 0.091063 seconds
+  Import took 0.104057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.728116 seconds.
+  path: Assets/Models/Living room/Couch.fbx
+  artifactKey: Guid(3b1f992f5ed5e074a9d0daaaecc4b921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Living room/Couch.fbx using Guid(3b1f992f5ed5e074a9d0daaaecc4b921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3c60e6c2ae23ea7e4dfbd62a5c71da5') in 0.066546 seconds
+  Import took 0.073398 seconds .
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.15 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 50 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.2 MB.
+System memory in use after: 68.4 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3148.
+Total: 31.433400 ms (FindLiveObjects: 0.280300 ms CreateObjectMapping: 0.135300 ms MarkObjects: 28.689500 ms  DeleteObjects: 2.325800 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.83 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 50 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 68.7 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3148.
+Total: 6.891400 ms (FindLiveObjects: 0.408600 ms CreateObjectMapping: 0.251700 ms MarkObjects: 4.132500 ms  DeleteObjects: 2.095900 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.82 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 50 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 68.7 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3148.
+Total: 6.687100 ms (FindLiveObjects: 0.397300 ms CreateObjectMapping: 0.246800 ms MarkObjects: 3.370800 ms  DeleteObjects: 2.669400 ms)
 
