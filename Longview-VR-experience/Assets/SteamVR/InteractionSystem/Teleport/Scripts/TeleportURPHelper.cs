@@ -8,7 +8,7 @@ namespace Valve.VR.InteractionSystem
     [ExecuteInEditMode]
     public class TeleportURPHelper : MonoBehaviour
     {
-#if UNITY_URP && UNITY_EDITOR
+#if !UNITY_URP && UNITY_EDITOR
         void Start()
         {
             if (UnityEditor.PrefabUtility.IsPartOfPrefabInstance(this) == false)
