@@ -498,5 +498,9 @@ namespace Valve.VR
 
             return handle;
         }
+        private void OnCollisionEnter(Collision collision)
+        {
+            Trigger();
+        }
     }
 }
