@@ -62,6 +62,14 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/NotebookMenu",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/JoystickSelection",
+      "type": "vector2"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -184,7 +192,9 @@
       "/actions/default/in/SnapTurnRight": "Snap Turn (Right)",
       "/actions/default/in/LeftHandTurn": "LeftHandTurn",
       "/actions/default/in/RightHandTouchpad": "RightHandTouchpad",
-      "/actions/default/in/Notebook": "Notebook"
+      "/actions/default/in/Notebook": "Notebook",
+      "/actions/default/in/NotebookMenu": "NotebookMenu",
+      "/actions/default/in/JoystickSelection": "JoyStickSelection"
     }
   ]
 }

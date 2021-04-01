@@ -54,9 +54,7 @@ public class Notebook : MonoBehaviour
                 }
             }
             else
-            {
                 notebookCanvas.enabled = false;
-            }
         }
     }
 }

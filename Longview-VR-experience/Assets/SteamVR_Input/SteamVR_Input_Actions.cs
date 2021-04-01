@@ -45,6 +45,10 @@ namespace Valve.VR
         
         private static SteamVR_Action_Boolean p_default_Notebook;
         
+        private static SteamVR_Action_Boolean p_default_NotebookMenu;
+        
+        private static SteamVR_Action_Vector2 p_default_JoystickSelection;
+        
         private static SteamVR_Action_Vibration p_default_Haptic;
         
         private static SteamVR_Action_Vector2 p_platformer_Move;
@@ -173,6 +177,22 @@ namespace Valve.VR
             }
         }
         
+        public static SteamVR_Action_Boolean default_NotebookMenu
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_NotebookMenu.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Vector2 default_JoystickSelection
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_JoystickSelection.GetCopy<SteamVR_Action_Vector2>();
+            }
+        }
+        
         public static SteamVR_Action_Vibration default_Haptic
         {
             get
@@ -254,6 +274,8 @@ namespace Valve.VR
                     SteamVR_Actions.default_RightHandTouchpad,
                     SteamVR_Actions.default_LeftHandTurn,
                     SteamVR_Actions.default_Notebook,
+                    SteamVR_Actions.default_NotebookMenu,
+                    SteamVR_Actions.default_JoystickSelection,
                     SteamVR_Actions.default_Haptic,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
@@ -277,6 +299,8 @@ namespace Valve.VR
                     SteamVR_Actions.default_RightHandTouchpad,
                     SteamVR_Actions.default_LeftHandTurn,
                     SteamVR_Actions.default_Notebook,
+                    SteamVR_Actions.default_NotebookMenu,
+                    SteamVR_Actions.default_JoystickSelection,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Steering,
@@ -300,6 +324,7 @@ namespace Valve.VR
                     SteamVR_Actions.default_SnapTurnLeft,
                     SteamVR_Actions.default_SnapTurnRight,
                     SteamVR_Actions.default_Notebook,
+                    SteamVR_Actions.default_NotebookMenu,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Brake,
                     SteamVR_Actions.buggy_Reset};
@@ -309,6 +334,7 @@ namespace Valve.VR
             Valve.VR.SteamVR_Input.actionsVector2 = new Valve.VR.SteamVR_Action_Vector2[] {
                     SteamVR_Actions.default_RightHandTouchpad,
                     SteamVR_Actions.default_LeftHandTurn,
+                    SteamVR_Actions.default_JoystickSelection,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.buggy_Steering};
             Valve.VR.SteamVR_Input.actionsVector3 = new Valve.VR.SteamVR_Action_Vector3[0];
@@ -327,6 +353,8 @@ namespace Valve.VR
                     SteamVR_Actions.default_RightHandTouchpad,
                     SteamVR_Actions.default_LeftHandTurn,
                     SteamVR_Actions.default_Notebook,
+                    SteamVR_Actions.default_NotebookMenu,
+                    SteamVR_Actions.default_JoystickSelection,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Steering,
@@ -351,6 +379,8 @@ namespace Valve.VR
             SteamVR_Actions.p_default_RightHandTouchpad = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/default/in/RightHandTouchpad")));
             SteamVR_Actions.p_default_LeftHandTurn = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/default/in/LeftHandTurn")));
             SteamVR_Actions.p_default_Notebook = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/Notebook")));
+            SteamVR_Actions.p_default_NotebookMenu = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/NotebookMenu")));
+            SteamVR_Actions.p_default_JoystickSelection = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/default/in/JoystickSelection")));
             SteamVR_Actions.p_default_Haptic = ((SteamVR_Action_Vibration)(SteamVR_Action.Create<SteamVR_Action_Vibration>("/actions/default/out/Haptic")));
             SteamVR_Actions.p_platformer_Move = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/platformer/in/Move")));
             SteamVR_Actions.p_platformer_Jump = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/platformer/in/Jump")));
