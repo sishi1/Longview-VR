@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.2/staging' branch; Version is '2020.2.3f1 (8ff31bc5bf5b) revision 9433883'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19041.804; Version 2004; 64bit' Language: 'en' Physical Memory: 16342 MB
+OS: 'Windows 10 Home; OS build 19041.867; Version 2004; 64bit' Language: 'en' Physical Memory: 16342 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,12 +15,12 @@ D:/Unity projects/Longview-VR/Longview-VR-experience
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56751
+63986
 Successfully changed project path to: D:/Unity projects/Longview-VR/Longview-VR-experience
 D:/Unity projects/Longview-VR/Longview-VR-experience
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 131.05 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 1.63 ms.
+Refreshing native plugins compatible for Editor in 93.07 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 1.73 ms.
 Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/Unity projects/Longview-VR/Longview-VR-experience/Assets
@@ -31,30 +31,31 @@ Direct3D:
     Vendor:   
     VRAM:     8079 MB
     Driver:   27.21.14.5206
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56300
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002348 seconds.
+Registered in 0.004036 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 111.37 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
+Refreshing native plugins compatible for Editor in 119.78 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.908 seconds
+- Completed reload, in  3.938 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004049 seconds.
+Registered in 0.004985 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 83.93 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
+Refreshing native plugins compatible for Editor in 147.52 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
@@ -69,438 +70,43 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.645 seconds
+- Completed reload, in  2.682 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 1.05 ms, found 6 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.87 ms, found 6 plugins.
 Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 2692 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 122.4 MB.
-System memory in use after: 119.5 MB.
+Unloading 2759 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.0 MB.
+System memory in use after: 129.0 MB.
 
-Unloading 58 unused Assets to reduce memory usage. Loaded Objects now: 3096.
-Total: 8.506800 ms (FindLiveObjects: 0.456700 ms CreateObjectMapping: 1.048200 ms MarkObjects: 3.216500 ms  DeleteObjects: 3.783500 ms)
-
-========================================================================
-Received Prepare
-Switching render pipeline 00000000000000000000000000000000 -> 44250acdc5c8c8645ad7a77f2654c320
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.90 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 98 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 73.3 MB.
-System memory in use after: 71.3 MB.
-
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 3157.
-Total: 4.702900 ms (FindLiveObjects: 0.412700 ms CreateObjectMapping: 0.178400 ms MarkObjects: 2.503200 ms  DeleteObjects: 1.606300 ms)
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3178.
+Total: 5.586500 ms (FindLiveObjects: 0.340000 ms CreateObjectMapping: 0.247200 ms MarkObjects: 2.941500 ms  DeleteObjects: 2.056000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Material/New Material.mat
-  artifactKey: Guid(7b88f5f3402e2f44bb56fd93d8e1b957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/New Material.mat using Guid(7b88f5f3402e2f44bb56fd93d8e1b957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda0389e9fd6ed765e1fce0a763b1283') in 0.481467 seconds
-  Import took 0.491780 seconds .
+  path: Assets/Scenes/Outside.unity
+  artifactKey: Guid(d554a929c7c21fa49a0c377ba9043fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Outside.unity using Guid(d554a929c7c21fa49a0c377ba9043fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284ce3990b1b1c37c92369846f8891ef') in 0.049036 seconds
+  Import took 0.057823 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.108903 seconds.
-  path: Assets/Models/Crime scene/crime_scene_v4.fbx
-  artifactKey: Guid(b5b1344ed7c189d409cdb88c9dd8c983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Crime scene/crime_scene_v4.fbx using Guid(b5b1344ed7c189d409cdb88c9dd8c983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d07857a8b7959053108e02cb1d48059') in 0.354569 seconds
-  Import took 0.367066 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/Models/Crime scene/door_v4.fbx
-  artifactKey: Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Crime scene/door_v4.fbx using Guid(e776eab5d1fead14f9a038810400034f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fde0514ed62a4ac844aa2b09777ccb9c') in 0.151270 seconds
-  Import took 0.159578 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Models/Crime scene/roof.fbx
-  artifactKey: Guid(df91983172419a941925bb75e8caee77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Crime scene/roof.fbx using Guid(df91983172419a941925bb75e8caee77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6769288281c7d24e3fb7e7ca3297de69') in 0.120716 seconds
-  Import took 0.126455 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Models/Crime scene/window_v2.fbx
-  artifactKey: Guid(6ecbe001b510f97409dc9801a2b48f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Crime scene/window_v2.fbx using Guid(6ecbe001b510f97409dc9801a2b48f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3a46e7ce2b9bdba3b09b009b01fc328') in 0.116314 seconds
-  Import took 0.122500 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.583302 seconds.
-  path: Assets/Models/Crime scene/crime_scene_v4.fbx
-  artifactKey: Guid(b5b1344ed7c189d409cdb88c9dd8c983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Crime scene/crime_scene_v4.fbx using Guid(b5b1344ed7c189d409cdb88c9dd8c983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d6f6f3171ce9bb49eddefc053a1cea1') in 0.272063 seconds
-  Import took 0.280195 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 74.809867 seconds.
-  path: Assets/Material/Crime scene look.mat
-  artifactKey: Guid(7b88f5f3402e2f44bb56fd93d8e1b957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/Crime scene look.mat using Guid(7b88f5f3402e2f44bb56fd93d8e1b957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20f7c50980db6f31eff126b04d95d293') in 0.023390 seconds
-  Import took 0.032737 seconds .
+  Time since last request: 29.385248 seconds.
+  path: Assets/Scenes/Crime scene.unity
+  artifactKey: Guid(7c989d72a35dd2840be7a7b7dcdf797e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Crime scene.unity using Guid(7c989d72a35dd2840be7a7b7dcdf797e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0563a2585c86d793030a17b4c2e30852') in 0.011821 seconds
+  Import took 0.020862 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005045 seconds.
+Registered in 0.004482 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.24 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  8.976 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 4.67 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
-Unloading 2631 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 128.0 MB.
-System memory in use after: 126.0 MB.
-
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3241.
-Total: 18.001900 ms (FindLiveObjects: 0.776400 ms CreateObjectMapping: 0.517300 ms MarkObjects: 11.189200 ms  DeleteObjects: 5.515900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 106.298985 seconds.
-  path: Assets/Defaults/UniversalRenderPipelineAsset.asset
-  artifactKey: Guid(44250acdc5c8c8645ad7a77f2654c320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Defaults/UniversalRenderPipelineAsset.asset using Guid(44250acdc5c8c8645ad7a77f2654c320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '190e1f06db93634770fd5774b34ee8f1') in 0.028440 seconds
-  Import took 0.037983 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/Defaults/UniversalRenderPipelineAsset_Renderer.asset
-  artifactKey: Guid(6a2604a3ae48bfa489dba07f09d21dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Defaults/UniversalRenderPipelineAsset_Renderer.asset using Guid(6a2604a3ae48bfa489dba07f09d21dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa25f6c2f0571a023e3a80701b34e989') in 0.010947 seconds
-  Import took 0.019213 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004452 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.75 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  3.372 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.64 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.31 ms.
-Unloading 2633 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 128.1 MB.
-System memory in use after: 126.1 MB.
-
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3246.
-Total: 7.275300 ms (FindLiveObjects: 0.804000 ms CreateObjectMapping: 0.295200 ms MarkObjects: 2.705500 ms  DeleteObjects: 3.468500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.252876 seconds.
-  path: Assets/Defaults/UniversalRenderPipelineAsset.asset
-  artifactKey: Guid(44250acdc5c8c8645ad7a77f2654c320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Defaults/UniversalRenderPipelineAsset.asset using Guid(44250acdc5c8c8645ad7a77f2654c320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '113facb59db8ac6fb1237d7e0a93e5f0') in 0.034950 seconds
-  Import took 0.050480 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 632.801380 seconds.
-  path: Assets/Models/Kitchen/Bar stool.fbx
-  artifactKey: Guid(4cf336bb01a50a643888a327b681eb29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/Bar stool.fbx using Guid(4cf336bb01a50a643888a327b681eb29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '653c721a5868f0826067ebe61a626976') in 0.305881 seconds
-  Import took 0.315512 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Assets/Models/Kitchen/stove.fbx
-  artifactKey: Guid(c8b749a4039136840bd3de159d522dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/stove.fbx using Guid(c8b749a4039136840bd3de159d522dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43587174ade984ec5a29b8150645d62a') in 0.376270 seconds
-  Import took 0.383568 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/Models/Kitchen/trashcan.fbx
-  artifactKey: Guid(38a71229d6bcec74895bdfe62f0d1dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/trashcan.fbx using Guid(38a71229d6bcec74895bdfe62f0d1dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '689625680911a6ae6cb3a83900fa73ba') in 0.101176 seconds
-  Import took 0.107084 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/Models/Kitchen/kitchen_cabinets_v5.fbx
-  artifactKey: Guid(72cf6b324a2aee44ca0c62e8280e2c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/kitchen_cabinets_v5.fbx using Guid(72cf6b324a2aee44ca0c62e8280e2c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1c8d0d4c7f6f6919750f1c29778b48f') in 0.282744 seconds
-  Import took 0.288147 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/Models/Kitchen/sink_v2.fbx
-  artifactKey: Guid(61d7ab2e4b93b5c449f085fe62e1820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/sink_v2.fbx using Guid(61d7ab2e4b93b5c449f085fe62e1820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ad6172b669a715722dcc3158c110b92') in 0.087372 seconds
-  Import took 0.094674 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/Models/Kitchen/tap.fbx
-  artifactKey: Guid(aed15a566b03fbb4dac319c6d4089d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/tap.fbx using Guid(aed15a566b03fbb4dac319c6d4089d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2976d725fe0731ecd25023a49541330a') in 0.075689 seconds
-  Import took 0.081549 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000397 seconds.
-  path: Assets/Models/Kitchen/koelkast.obj
-  artifactKey: Guid(1723f626d20b27945a021f4b2ee896f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/koelkast.obj using Guid(1723f626d20b27945a021f4b2ee896f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ea34acb0738ee5a75efa67237a3fb6b') in 0.039221 seconds
-  Import took 0.044715 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/Models/Kitchen/kitchen_island.fbx
-  artifactKey: Guid(795c9581f61e022409bed8772d73dbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/kitchen_island.fbx using Guid(795c9581f61e022409bed8772d73dbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a1d2beb3b3c434e476da18426ce5aa2') in 0.355278 seconds
-  Import took 0.361071 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/Models/Kitchen/sink.fbx
-  artifactKey: Guid(cc625d8c32bb8d64ead60b9de7131fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Kitchen/sink.fbx using Guid(cc625d8c32bb8d64ead60b9de7131fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d356b0dbc9f8884f78459aea41c4cda') in 0.034259 seconds
-  Import took 0.040351 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 375.704276 seconds.
-  path: Assets/Models/BuidlingNew.obj
-  artifactKey: Guid(f60c020bb3c1db84b994e2115f9be1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/BuidlingNew.obj using Guid(f60c020bb3c1db84b994e2115f9be1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f37c82bff91968bb6a0ca29b8336acf2') in 0.040979 seconds
-  Import took 0.048466 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Models/Character.fbx
-  artifactKey: Guid(56137649b3e09094393e1c961708fefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Character.fbx using Guid(56137649b3e09094393e1c961708fefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b4b591d4ed91569a01792ba44f54906') in 0.847346 seconds
-  Import took 0.855057 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 119.448696 seconds.
-  path: Assets/Defaults/UniversalRenderPipelineAsset.asset
-  artifactKey: Guid(44250acdc5c8c8645ad7a77f2654c320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Defaults/UniversalRenderPipelineAsset.asset using Guid(44250acdc5c8c8645ad7a77f2654c320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5123541c2140e5c65f5954cfc611d1cc') in 0.004120 seconds
-  Import took 0.010055 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 133.098882 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/HandColliderLeft.prefab
-  artifactKey: Guid(73f816dd3537a4c44988f340a5da70b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/HandColliderLeft.prefab using Guid(73f816dd3537a4c44988f340a5da70b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '312afdcde7b21810e7130916bce1456c') in 0.014999 seconds
-  Import took 0.021861 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/LeftRenderModel.prefab
-  artifactKey: Guid(8ade79fed86bbd141926d1cd94c98457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/LeftRenderModel.prefab using Guid(8ade79fed86bbd141926d1cd94c98457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6dbf5fbf4285d83a23363b5a64eeee') in 0.067184 seconds
-  Import took 0.074897 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/LeftRenderModel Slim.prefab
-  artifactKey: Guid(d5082f7d9f947374197e0a97786f4e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/LeftRenderModel Slim.prefab using Guid(d5082f7d9f947374197e0a97786f4e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdfaa52af12c580e136b13a73bc41b61') in 0.010355 seconds
-  Import took 0.017085 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModel Slim.prefab
-  artifactKey: Guid(837f93beb9a614743ae3a2c0ada7c388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModel Slim.prefab using Guid(837f93beb9a614743ae3a2c0ada7c388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3668341ea9f596d9a7475d5e7b64d74a') in 0.009990 seconds
-  Import took 0.016507 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000359 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/Player.prefab
-  artifactKey: Guid(dc06161b6d97feb419f45f03b62e14b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/Player.prefab using Guid(dc06161b6d97feb419f45f03b62e14b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d684d953974c98aed0314f5363c1fb2') in 0.102976 seconds
-  Import took 0.122167 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/LeftRenderModel Alien.prefab
-  artifactKey: Guid(d8d1e5711b2c77d48ac96e769aaff27a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/LeftRenderModel Alien.prefab using Guid(d8d1e5711b2c77d48ac96e769aaff27a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9782f5f353e859f85c4e54f0aaa8ef8d') in 0.016100 seconds
-  Import took 0.023196 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000650 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/HandColliderRight.prefab
-  artifactKey: Guid(2f378ddf4e9373548a3708d26c1d75a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/HandColliderRight.prefab using Guid(2f378ddf4e9373548a3708d26c1d75a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c62a5861734be8e21a2550aa335e9cd2') in 0.010254 seconds
-  Import took 0.016709 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/LeftRenderModelFloppy.prefab
-  artifactKey: Guid(534d2fcf558316441a41841275676807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/LeftRenderModelFloppy.prefab using Guid(534d2fcf558316441a41841275676807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae11202216712f2043ebb38961d553b8') in 0.014917 seconds
-  Import took 0.022666 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModel Alien.prefab
-  artifactKey: Guid(b3cb7e5f55e66cb40aea59db72c62365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModel Alien.prefab using Guid(b3cb7e5f55e66cb40aea59db72c62365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ee0fb356edad6719b49ff290ac998e') in 0.008922 seconds
-  Import took 0.015307 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModelFloppy.prefab
-  artifactKey: Guid(4c5fea2300124fe49a30168e29627064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModelFloppy.prefab using Guid(4c5fea2300124fe49a30168e29627064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c2158e4285d1cb16a9b414d61537551') in 0.014927 seconds
-  Import took 0.021937 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModel.prefab
-  artifactKey: Guid(d07386f0ec952ec409dc7753bcf5746b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModel.prefab using Guid(d07386f0ec952ec409dc7753bcf5746b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49e7bf705f6fca53414cb575adcdeec1') in 0.008188 seconds
-  Import took 0.015221 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.730461 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModel Slim.prefab
-  artifactKey: Guid(837f93beb9a614743ae3a2c0ada7c388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModel Slim.prefab using Guid(837f93beb9a614743ae3a2c0ada7c388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8059448687d9a9dd586c3638674afae4') in 0.009078 seconds
-  Import took 0.016803 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004190 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.761 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.68 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 2633 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.8 MB.
-System memory in use after: 138.8 MB.
-
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3292.
-Total: 4.342300 ms (FindLiveObjects: 0.367800 ms CreateObjectMapping: 0.212000 ms MarkObjects: 2.208600 ms  DeleteObjects: 1.552200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004418 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.384 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.18 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 2630 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.7 MB.
-System memory in use after: 138.7 MB.
-
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3295.
-Total: 6.806600 ms (FindLiveObjects: 0.538700 ms CreateObjectMapping: 0.277600 ms MarkObjects: 3.659600 ms  DeleteObjects: 2.328800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003575 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.60 ms, found 6 plugins.
 Preloading 1 native plugins for Editor in 0.10 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -512,482 +118,16 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.574 seconds
+- Completed reload, in  2.307 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.10 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 2630 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.7 MB.
-System memory in use after: 138.7 MB.
-
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3298.
-Total: 8.148300 ms (FindLiveObjects: 1.077200 ms CreateObjectMapping: 0.425600 ms MarkObjects: 3.792400 ms  DeleteObjects: 2.851200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003831 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.12 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.520 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.30 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 2630 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.7 MB.
-System memory in use after: 138.7 MB.
-
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3301.
-Total: 6.435400 ms (FindLiveObjects: 0.520700 ms CreateObjectMapping: 0.239700 ms MarkObjects: 3.007200 ms  DeleteObjects: 2.666000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 134.042376 seconds.
-  path: Assets/SteamVR/InteractionSystem/Teleport/Scripts/Teleport.cs
-  artifactKey: Guid(f260935093f73f241bfaa1578e5e5506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Teleport/Scripts/Teleport.cs using Guid(f260935093f73f241bfaa1578e5e5506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f8d2134fad0c761176e529e7987d417') in 0.017667 seconds
-  Import took 0.023867 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001744 seconds.
-  path: Assets/SteamVR/InteractionSystem/Teleport/Scripts/Teleport.cs
-  artifactKey: Guid(f260935093f73f241bfaa1578e5e5506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Teleport/Scripts/Teleport.cs using Guid(f260935093f73f241bfaa1578e5e5506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f8d2134fad0c761176e529e7987d417') in 0.003427 seconds
-  Import took 0.012091 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.360127 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/Prefabs/Buggy Controller.prefab
-  artifactKey: Guid(d9803cc69067105488f4a78449f2aeec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/Prefabs/Buggy Controller.prefab using Guid(d9803cc69067105488f4a78449f2aeec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8780bda28eb77b10baacaf5a712cf5ea') in 0.897554 seconds
-  Import took 0.906874 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Materials/BuggyController__Controller.mat
-  artifactKey: Guid(4408e8645ee827345aa56eee531f96e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Materials/BuggyController__Controller.mat using Guid(4408e8645ee827345aa56eee531f96e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f612f8d75053a3972678b954a1275a') in 0.051869 seconds
-  Import took 0.059496 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000290 seconds.
-  path: Assets/SteamVR/InteractionSystem/Hints/Materials/URPControllerTextHintAnchor.mat
-  artifactKey: Guid(5ee00630a4cba94459f162ea174a1d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Hints/Materials/URPControllerTextHintAnchor.mat using Guid(5ee00630a4cba94459f162ea174a1d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '810c3c1e2e27ed93fa603f46e5a50d00') in 0.072812 seconds
-  Import took 0.078131 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000285 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/Prefabs/JoeJeffController.prefab
-  artifactKey: Guid(b209c30bc3eb7884781069adc59ed447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/Prefabs/JoeJeffController.prefab using Guid(b209c30bc3eb7884781069adc59ed447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aac1643bf756a9742ad49a51a83e59ad') in 0.028301 seconds
-  Import took 0.034963 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/Models/Materials/BuggyController__Controller.mat
-  artifactKey: Guid(f66e57e05610a774bbb5097b4975a23a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/Models/Materials/BuggyController__Controller.mat using Guid(f66e57e05610a774bbb5097b4975a23a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '465299bd5e27c34b4541030a5eea20cc') in 0.009971 seconds
-  Import took 0.016904 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000308 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Materials/BuggyController.mat
-  artifactKey: Guid(8429e69bebe55ae4392d143cc550134f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Materials/BuggyController.mat using Guid(8429e69bebe55ae4392d143cc550134f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ca9436e705f04efcbe3187addbb4a60') in 0.020848 seconds
-  Import took 0.028012 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000387 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_Normal.png
-  artifactKey: Guid(d66d01bd1e0702a4bbfa207820fb2fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_Normal.png using Guid(d66d01bd1e0702a4bbfa207820fb2fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f169bc91e5dad0ba6c8af235e64f0dbe') in 0.052152 seconds
-  Import took 0.058004 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/SteamVR/InteractionSystem/Hints/Materials/URPControllerTextHintLine.mat
-  artifactKey: Guid(d51c2116441c31e408cfcd6e44b1ff93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Hints/Materials/URPControllerTextHintLine.mat using Guid(d51c2116441c31e408cfcd6e44b1ff93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb63d819ee85a23e9a4b42606a97e2a5') in 0.013867 seconds
-  Import took 0.021236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_Emission.png
-  artifactKey: Guid(4e003c622c1d9a6408f4d90438aa389a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_Emission.png using Guid(4e003c622c1d9a6408f4d90438aa389a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4323f6b6cbca5d01852408e1b3025b0e') in 0.008844 seconds
-  Import took 0.015093 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Textures/PlatformController_PController_Emission.png
-  artifactKey: Guid(6fc72b9e7ef7d454e9d5f481bd6518ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Textures/PlatformController_PController_Emission.png using Guid(6fc72b9e7ef7d454e9d5f481bd6518ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d3b0085a2417f06c67c63052d8baad') in 0.007050 seconds
-  Import took 0.013199 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Buggy Controller.fbx
-  artifactKey: Guid(02842627faccabf418acf404c32f7b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Buggy Controller.fbx using Guid(02842627faccabf418acf404c32f7b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8246cb3b4585121121c4fa5d741c278f') in 0.106112 seconds
-  Import took 0.112638 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000317 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Textures/PlatformController_PController_Normal.png
-  artifactKey: Guid(531b4709e0c844a4ea44d140478c731f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Textures/PlatformController_PController_Normal.png using Guid(531b4709e0c844a4ea44d140478c731f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca2fde27754dfa428ee0efd1eb0bfda') in 0.015243 seconds
-  Import took 0.021319 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_AlbedoTransparency.png
-  artifactKey: Guid(e97f03e3f9d4c584f991530c7bff882b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_AlbedoTransparency.png using Guid(e97f03e3f9d4c584f991530c7bff882b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294d3febcbc2e593efecf2a33572040e') in 0.026974 seconds
-  Import took 0.036893 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000474 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Buggy Controller.fbx
-  artifactKey: Guid(02842627faccabf418acf404c32f7b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Buggy Controller.fbx using Guid(02842627faccabf418acf404c32f7b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8246cb3b4585121121c4fa5d741c278f') in 0.086851 seconds
-  Import took 0.094101 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/SteamVR/InteractionSystem/Hints/Prefabs/ControllerTextHint.prefab
-  artifactKey: Guid(5fa42bb9e52706a42b8a1eaf0b54326a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Hints/Prefabs/ControllerTextHint.prefab using Guid(5fa42bb9e52706a42b8a1eaf0b54326a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1869c2cdbf4022bbd686924119dba68b') in 0.029051 seconds
-  Import took 0.036757 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_MetallicSmoothness.png
-  artifactKey: Guid(f953b4ec1bb0a834cadc594cf2a5bca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_MetallicSmoothness.png using Guid(f953b4ec1bb0a834cadc594cf2a5bca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7fceca887803cc63ca3976a0f3e706') in 0.013427 seconds
-  Import took 0.019775 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/SteamVR/InteractionSystem/Hints/Materials/ControllerButtonHints.mat
-  artifactKey: Guid(11b050e661ec0cf48a289a7266451e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Hints/Materials/ControllerButtonHints.mat using Guid(11b050e661ec0cf48a289a7266451e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49bf4ac70fa66e9be0e31545c2e2ffa9') in 0.024064 seconds
-  Import took 0.032252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/Textures/oldControllerVelocity.png
-  artifactKey: Guid(1b0a81148594a0145a30fb42626127ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/Textures/oldControllerVelocity.png using Guid(1b0a81148594a0145a30fb42626127ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ca1eb9b89ccaf6da128f56f4fd4c9dd') in 0.019524 seconds
-  Import took 0.027430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Materials/SteamVRControllerModel.mat
-  artifactKey: Guid(3c433e134e4719444b65bf064a77e22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Materials/SteamVRControllerModel.mat using Guid(3c433e134e4719444b65bf064a77e22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbbfc056cbf73ad31529d98ad0f011b1') in 0.069060 seconds
-  Import took 0.074621 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/SteamVR/InteractionSystem/Hints/Materials/ControllerTextHintAnchor.mat
-  artifactKey: Guid(7f08f06256ab27b4cb9eb0b41831a69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Hints/Materials/ControllerTextHintAnchor.mat using Guid(7f08f06256ab27b4cb9eb0b41831a69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23fd6e2bc612dbbbb5922f28522773ef') in 0.020601 seconds
-  Import took 0.026260 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Textures/PlatformController_PController_MetallicSmoothness.png
-  artifactKey: Guid(62cf64cc226fcc648aa55fbec5654323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Textures/PlatformController_PController_MetallicSmoothness.png using Guid(62cf64cc226fcc648aa55fbec5654323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b6d98272d887557883649bb67c9fee') in 0.013855 seconds
-  Import took 0.021118 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000318 seconds.
-  path: Assets/SteamVR/Prefabs/controller.prefab
-  artifactKey: Guid(e789c2cc0c98a4c4198a4033fb8ccf96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Prefabs/controller.prefab using Guid(e789c2cc0c98a4c4198a4033fb8ccf96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a19226eb5f2363a184740ff46e0cd9') in 0.010066 seconds
-  Import took 0.017979 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Textures/PlatformController_PController_AlbedoTransparency.png
-  artifactKey: Guid(5507e8f20e632b845b4aea2c27a0c225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Textures/PlatformController_PController_AlbedoTransparency.png using Guid(5507e8f20e632b845b4aea2c27a0c225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69ac918926242cacdd6df601eaa62543') in 0.019198 seconds
-  Import took 0.026084 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/SteamVR/InteractionSystem/Hints/Materials/ControllerTextHintLine.mat
-  artifactKey: Guid(fa05b1dac59aa764184da0aba83b2bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Hints/Materials/ControllerTextHintLine.mat using Guid(fa05b1dac59aa764184da0aba83b2bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deb8271db41a49ed1ef0f9590295a03e') in 0.012578 seconds
-  Import took 0.017887 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/SteamVR/InteractionSystem/Hints/Materials/URPControllerButtonHints.mat
-  artifactKey: Guid(70a2eb634d7ed434b86d36f190fcf3a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Hints/Materials/URPControllerButtonHints.mat using Guid(70a2eb634d7ed434b86d36f190fcf3a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08634859c089a2c351f28f38eb750e4b') in 0.024368 seconds
-  Import took 0.031615 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/Models/Materials/BuggyController.mat
-  artifactKey: Guid(aa587069092ad614eab6b0d694a87c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/Models/Materials/BuggyController.mat using Guid(aa587069092ad614eab6b0d694a87c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f25cdd26991cff6b40e49a0bca31a00') in 0.011218 seconds
-  Import took 0.018448 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/JoeJeff/JoeJeffController.fbx
-  artifactKey: Guid(076d897164a32834791fe9bd812ed21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/JoeJeff/JoeJeffController.fbx using Guid(076d897164a32834791fe9bd812ed21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f44268ce1bd0058156e834be1461734') in 0.035979 seconds
-  Import took 0.042956 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/SteamVR/Models/vr_hand_grabposes.fbx
-  artifactKey: Guid(5b1b3324d9af1db498a8cb294cc8d274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Models/vr_hand_grabposes.fbx using Guid(5b1b3324d9af1db498a8cb294cc8d274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c66db49d1715523a7481b1763a783b44') in 0.049661 seconds
-  Import took 0.056710 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/JoeJeff/JoeJeffController.fbx
-  artifactKey: Guid(076d897164a32834791fe9bd812ed21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/JoeJeff/JoeJeffController.fbx using Guid(076d897164a32834791fe9bd812ed21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f44268ce1bd0058156e834be1461734') in 0.034449 seconds
-  Import took 0.041414 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Materials/PController.mat
-  artifactKey: Guid(76f42063ac80e7e45aa27bebda813768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Materials/PController.mat using Guid(76f42063ac80e7e45aa27bebda813768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd531e0ed62d3d3358d60f92e84db38d') in 0.022319 seconds
-  Import took 0.029033 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 205.153420 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModel Slim.prefab
-  artifactKey: Guid(837f93beb9a614743ae3a2c0ada7c388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModel Slim.prefab using Guid(837f93beb9a614743ae3a2c0ada7c388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee8fb5501c1d8ed78d2701a7299a33e1') in 0.030623 seconds
-  Import took 0.038042 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004094 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.72 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.27 ms, found 6 plugins.
 Preloading 1 native plugins for Editor in 0.10 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
+Unloading 2633 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.9 MB.
+System memory in use after: 123.0 MB.
 
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3181.
+Total: 20.531600 ms (FindLiveObjects: 4.444800 ms CreateObjectMapping: 1.754900 ms MarkObjects: 9.051500 ms  DeleteObjects: 5.277500 ms)
 
-Mono: successfully reloaded assembly
-- Completed reload, in  1.760 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.43 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 2630 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.1 MB.
-System memory in use after: 139.1 MB.
-
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3344.
-Total: 8.073100 ms (FindLiveObjects: 0.573300 ms CreateObjectMapping: 0.302400 ms MarkObjects: 4.044300 ms  DeleteObjects: 3.151400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003693 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.05 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.619 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 2630 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.1 MB.
-System memory in use after: 139.1 MB.
-
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3347.
-Total: 5.805200 ms (FindLiveObjects: 0.658600 ms CreateObjectMapping: 0.509100 ms MarkObjects: 2.992200 ms  DeleteObjects: 1.642900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004052 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.18 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.11 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.708 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 2630 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.1 MB.
-System memory in use after: 139.1 MB.
-
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3350.
-Total: 8.924300 ms (FindLiveObjects: 0.663000 ms CreateObjectMapping: 0.495800 ms MarkObjects: 4.319400 ms  DeleteObjects: 3.443000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005211 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.559 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.35 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 2630 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.1 MB.
-System memory in use after: 139.1 MB.
-
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3353.
-Total: 5.586300 ms (FindLiveObjects: 1.019100 ms CreateObjectMapping: 0.265900 ms MarkObjects: 2.297000 ms  DeleteObjects: 2.002400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 104.709122 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModel Slim.prefab
-  artifactKey: Guid(837f93beb9a614743ae3a2c0ada7c388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModel Slim.prefab using Guid(837f93beb9a614743ae3a2c0ada7c388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66749b5a1098efcfcc2e21c6eb13c547') in 0.124432 seconds
-  Import took 0.133514 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005268 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity projects\Longview-VR\Longview-VR-experience\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.607 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 2630 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.1 MB.
-System memory in use after: 139.1 MB.
-
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3356.
-Total: 9.398800 ms (FindLiveObjects: 0.608400 ms CreateObjectMapping: 0.239700 ms MarkObjects: 5.644700 ms  DeleteObjects: 2.904200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 59.967590 seconds.
-  path: Assets/SteamVR/InteractionSystem/Core/Prefabs/LeftRenderModel Slim.prefab
-  artifactKey: Guid(d5082f7d9f947374197e0a97786f4e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Core/Prefabs/LeftRenderModel Slim.prefab using Guid(d5082f7d9f947374197e0a97786f4e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f5a8e700262b0a1a78103c39ee5082') in 0.103229 seconds
-  Import took 0.111503 seconds .
-
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

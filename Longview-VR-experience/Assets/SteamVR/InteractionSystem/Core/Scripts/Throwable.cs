@@ -140,7 +140,7 @@ namespace Valve.VR.InteractionSystem
 
             hadInterpolation = this.rigidbody.interpolation;
 
-            attached = true;
+            attached = false;
 
 			onPickUp.Invoke();
 

@@ -121,6 +121,38 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean Notebook
+        {
+            get
+            {
+                return SteamVR_Actions.default_Notebook;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean NotebookMenu
+        {
+            get
+            {
+                return SteamVR_Actions.default_NotebookMenu;
+            }
+        }
+        
+        public virtual SteamVR_Action_Vector2 JoystickSelection
+        {
+            get
+            {
+                return SteamVR_Actions.default_JoystickSelection;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean FakeGrab
+        {
+            get
+            {
+                return SteamVR_Actions.default_FakeGrab;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get

@@ -92,7 +92,6 @@ namespace Valve.VR.InteractionSystem
         public bool isHovering { get; protected set; }
         public bool wasHovering { get; protected set; }
 
-
         private void Awake()
         {
             skeletonPoser = GetComponent<SteamVR_Skeleton_Poser>();
