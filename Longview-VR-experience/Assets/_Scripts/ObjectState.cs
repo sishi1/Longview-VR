@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectState : MonoBehaviour
 {
     public bool markedForInterest;
-    public bool markedForTaking;
+    public bool markedForConfiscate;
     public bool markedForSpecialist;
 
     public bool shouldBeMarked;
@@ -48,9 +48,9 @@ public class ObjectState : MonoBehaviour
 
     public void MarkForInterest()
     {
-        if (markedForTaking)
+        if (markedForConfiscate)
         {
-            notebook.markedObjectsForTaking.Remove(gameObject.name);
+            notebook.markedObjectsForConfiscate.Remove(gameObject.name);
         }
         else if (markedForSpecialist)
         {
@@ -63,7 +63,7 @@ public class ObjectState : MonoBehaviour
         }
 
         markedForInterest = true;
-        markedForTaking = false;
+        markedForConfiscate = false;
         markedForSpecialist = false;
     }
 
@@ -78,13 +78,13 @@ public class ObjectState : MonoBehaviour
             notebook.markedObjectsForSpecialist.Remove(gameObject.name);
         }
 
-        if (!markedForTaking)
+        if (!markedForConfiscate)
         {
-            notebook.markedObjectsForTaking.Add(gameObject.name);
+            notebook.markedObjectsForConfiscate.Add(gameObject.name);
         }
 
         markedForInterest = false;
-        markedForTaking = true;
+        markedForConfiscate = true;
         markedForSpecialist = false;
     }
 
@@ -94,9 +94,9 @@ public class ObjectState : MonoBehaviour
         {
             notebook.markedObjectsForInterest.Remove(gameObject.name);
         }
-        else if (markedForTaking)
+        else if (markedForConfiscate)
         {
-            notebook.markedObjectsForTaking.Remove(gameObject.name);
+            notebook.markedObjectsForConfiscate.Remove(gameObject.name);
         }
 
         if (!markedForSpecialist)
@@ -105,7 +105,7 @@ public class ObjectState : MonoBehaviour
         }
 
         markedForInterest = false;
-        markedForTaking = false;
+        markedForConfiscate = false;
         markedForSpecialist = true;
     }
 
@@ -115,9 +115,9 @@ public class ObjectState : MonoBehaviour
         {
             notebook.markedObjectsForInterest.Remove(gameObject.name);
         }
-        else if (markedForTaking)
+        else if (markedForConfiscate)
         {
-            notebook.markedObjectsForTaking.Remove(gameObject.name);
+            notebook.markedObjectsForConfiscate.Remove(gameObject.name);
         }
         else if (markedForSpecialist)
         {
@@ -125,7 +125,7 @@ public class ObjectState : MonoBehaviour
         }
 
         markedForInterest = false;
-        markedForTaking = false;
+        markedForConfiscate = false;
         markedForSpecialist = false;
     }
 }

@@ -92,9 +92,6 @@ namespace Valve.VR.InteractionSystem
         public bool isHovering { get; protected set; }
         public bool wasHovering { get; protected set; }
 
-        public bool holdingObject;
-
-
         private void Awake()
         {
             skeletonPoser = GetComponent<SteamVR_Skeleton_Poser>();
@@ -312,7 +309,6 @@ namespace Valve.VR.InteractionSystem
             }
 
             attachedToHand = hand;
-            holdingObject = true;
         }
 
         protected virtual void OnDetachedFromHand(Hand hand)
@@ -340,7 +336,6 @@ namespace Valve.VR.InteractionSystem
             }
 
             attachedToHand = null;
-            holdingObject = false;
         }
 
         protected virtual void OnDestroy()

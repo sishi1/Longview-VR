@@ -6,51 +6,64 @@ using Valve.VR.InteractionSystem;
 
 public class MarkObject : MonoBehaviour
 {
-    [Header("SteamVR Input")]
-    public SteamVR_Input_Sources rightHand;
-    public SteamVR_Action_Boolean aButton;
-    public SteamVR_Action_Vector2 joystickSelection;
-
-    [HideInInspector]
-    public Interactable interactable;
-    [HideInInspector]
-    public ObjectState objectState;
-    [HideInInspector]
-    public string selection;
+    [Header("Miscellaneous")]
+    public Transform controller;
 
     private GameObject selectedObject;
     public GameObject markObjectUI;
     private Canvas markObjectCanvas;
 
-    private bool choiceLocked;
+    [Header("SteamVR Input")]
+    public SteamVR_Input_Sources rightHand;
+    public SteamVR_Action_Boolean aButton;
+    public SteamVR_Action_Vector2 joystickSelection;
+    public SteamVR_Action_Boolean trigger;
+
+    [Header("Raycast")]
+    public LayerMask checkLayer;
+    [SerializeField]
+    public float range;
+
+    [HideInInspector]
+    public ObjectState objectState;
+    [HideInInspector]
+    public string selection;
+
+    private bool triggerPressed;
+
 
     private void Start()
     {
         markObjectCanvas = markObjectUI.GetComponent<Canvas>();
-        interactable = FindObjectOfType<Interactable>();
     }
 
     private void Update()
     {
-        //if a object is in hand
-        if (interactable.holdingObject)
+        RaycastHit hit;
+
+        //Checks whether the raycast found a object of the specified layer 
+        if (Physics.Raycast(controller.position, controller.forward, out hit, range, checkLayer))
         {
-            //if the object is different than previous object
-            if (this.gameObject != selectedObject)
+            if (trigger.GetStateDown(rightHand))
+                triggerPressed = true;
+
+            if (hit.collider.gameObject != selectedObject)
             {
-                selectedObject = this.gameObject;
+                selectedObject = hit.collider.gameObject;
                 objectState = selectedObject.GetComponent<ObjectState>();
-                
             }
 
-            if (aButton.GetStateDown(rightHand))
+            if (aButton.GetStateDown(rightHand) && triggerPressed)
                 markObjectCanvas.enabled = true;
 
             JoystickSelection();
 
         }
         else
+        {
             markObjectCanvas.enabled = false;
+            triggerPressed = false;
+        }
     }
 
     private void JoystickSelection()
@@ -58,66 +71,60 @@ public class MarkObject : MonoBehaviour
         //left/interesting
         if (joystickSelection.axis.x >= -1f && joystickSelection.axis.x < -0.2f && joystickSelection.axis.y >= -0.71f && joystickSelection.axis.y < 0.71f)
         {
-            choiceLocked = true;
             selection = "interesting";
         }
         //top/confiscate
         else if (joystickSelection.axis.x >= -0.71f && joystickSelection.axis.x <= 0.71f && joystickSelection.axis.y > 0.2f && joystickSelection.axis.y <= 1f)
         {
-            choiceLocked = true;
             selection = "confiscate";
         }
         //right/ask specialist
         else if (joystickSelection.axis.x <= 1f && joystickSelection.axis.x > 0.2f && joystickSelection.axis.y >= -0.71f && joystickSelection.axis.y < 0.71f)
         {
-            choiceLocked = true;
             selection = "specialist";
         }
         //bottom/nothing
         else if (joystickSelection.axis.x <= 0.71f && joystickSelection.axis.x > -0.71f && joystickSelection.axis.y >= -1f && joystickSelection.axis.y < -0.2f)
         {
-            choiceLocked = true;
             selection = "nothing";
         }
 
-        if (choiceLocked)
+        ConfirmSelection();
+    }
+
+    private void ConfirmSelection()
+    {
+        if (joystickSelection.axis.x == 0 && joystickSelection.axis.y == 0)
         {
-            if (joystickSelection.axis.x == 0 && joystickSelection.axis.y == 0)
+            switch (selection)
             {
-                switch(selection)
-                {
-                    case "interesting":
-                        objectState.MarkForInterest();
-                        Debug.Log(selectedObject + "Send to notebook as interest");
-                        ResetStatus();
-                        markObjectCanvas.enabled = false;
-                        break;
+                case "interesting":
+                    objectState.MarkForInterest();
+                    ResetStatus();
+                    markObjectCanvas.enabled = false;
+                    break;
 
-                    case "confiscate":
-                        //objectState.MarkForTaking();
-                        Debug.Log(selectedObject + "Send to notebook as confiscate");
-                        ResetStatus();
-                        markObjectCanvas.enabled = false;
-                        break;
+                case "confiscate":
+                    objectState.MarkForConfiscate();
+                    ResetStatus();
+                    markObjectCanvas.enabled = false;
+                    break;
 
-                    case "specialist":
-                        //objectState.MarkForSpecialist();
-                        Debug.Log(selectedObject + "Send to notebook as specialist");
-                        ResetStatus();
-                        markObjectCanvas.enabled = false;
-                        break;
+                case "specialist":
+                    objectState.MarkForSpecialist();
+                    ResetStatus();
+                    markObjectCanvas.enabled = false;
+                    break;
 
-                    case "nothing":
-                        //objectState.MarkForNothing();
-                        Debug.Log(selectedObject + "Send to notebook as nothing");
-                        ResetStatus();
-                        markObjectCanvas.enabled = false;
-                        break;
+                case "nothing":
+                    objectState.MarkForNothing();
+                    ResetStatus();
+                    markObjectCanvas.enabled = false;
+                    break;
 
-                    case null:
-                        Debug.LogErrorFormat("Something went wrong in the switch statement", selection);
-                        break;
-                }
+                case null:
+                    Debug.LogErrorFormat("Something went wrong in the switch statement", selection);
+                    break;
             }
         }
     }
@@ -125,6 +132,5 @@ public class MarkObject : MonoBehaviour
     private void ResetStatus()
     {
         selection = "";
-        choiceLocked = false;
     }
 }

@@ -70,6 +70,10 @@
       "type": "vector2"
     },
     {
+      "name": "/actions/default/in/FakeGrab",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -194,7 +198,8 @@
       "/actions/default/in/RightHandTouchpad": "RightHandTouchpad",
       "/actions/default/in/Notebook": "Notebook",
       "/actions/default/in/NotebookMenu": "NotebookMenu",
-      "/actions/default/in/JoystickSelection": "JoyStickSelection"
+      "/actions/default/in/JoystickSelection": "JoyStickSelection",
+      "/actions/default/in/FakeGrab": "FakeGrab"
     }
   ]
 }

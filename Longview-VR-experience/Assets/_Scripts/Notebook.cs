@@ -12,7 +12,7 @@ public class Notebook : MonoBehaviour
 
     [Header("Marked Objects")]
     public List<string> markedObjectsForInterest = new List<string>();
-    public List<string> markedObjectsForTaking = new List<string>();
+    public List<string> markedObjectsForConfiscate = new List<string>();
     public List<string> markedObjectsForSpecialist = new List<string>();
 
     [Header("UI")]
@@ -42,7 +42,7 @@ public class Notebook : MonoBehaviour
                 }
 
                 textComponent.text += "\n" + "<#00FF00>" + "In beslag nemen:" + "</color>" + "\n";
-                foreach (string markedObject in markedObjectsForTaking)
+                foreach (string markedObject in markedObjectsForConfiscate)
                 {
                     textComponent.text += "- " + markedObject + "\n";
                 }
