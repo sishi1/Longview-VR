@@ -44,6 +44,8 @@ public class MarkObject : MonoBehaviour
         //Checks whether the raycast found a object of the specified layer 
         if (Physics.Raycast(controller.position, controller.forward, out hit, range, checkLayer))
         {
+
+            Debug.Log("Interacted with: " + hit.collider.gameObject);
             if (trigger.GetStateDown(rightHand))
                 triggerPressed = true;
 
