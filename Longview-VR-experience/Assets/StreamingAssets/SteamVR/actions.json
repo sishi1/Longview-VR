@@ -74,6 +74,10 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/DoorGrab",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -199,7 +203,8 @@
       "/actions/default/in/Notebook": "Notebook",
       "/actions/default/in/NotebookMenu": "NotebookMenu",
       "/actions/default/in/JoystickSelection": "JoyStickSelection",
-      "/actions/default/in/FakeGrab": "FakeGrab"
+      "/actions/default/in/FakeGrab": "FakeGrab",
+      "/actions/default/in/DoorGrab": "DoorGrab"
     }
   ]
 }

@@ -51,6 +51,8 @@ namespace Valve.VR
         
         private static SteamVR_Action_Boolean p_default_FakeGrab;
         
+        private static SteamVR_Action_Boolean p_default_DoorGrab;
+        
         private static SteamVR_Action_Vibration p_default_Haptic;
         
         private static SteamVR_Action_Vector2 p_platformer_Move;
@@ -203,6 +205,14 @@ namespace Valve.VR
             }
         }
         
+        public static SteamVR_Action_Boolean default_DoorGrab
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_DoorGrab.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
         public static SteamVR_Action_Vibration default_Haptic
         {
             get
@@ -287,6 +297,7 @@ namespace Valve.VR
                     SteamVR_Actions.default_NotebookMenu,
                     SteamVR_Actions.default_JoystickSelection,
                     SteamVR_Actions.default_FakeGrab,
+                    SteamVR_Actions.default_DoorGrab,
                     SteamVR_Actions.default_Haptic,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
@@ -313,6 +324,7 @@ namespace Valve.VR
                     SteamVR_Actions.default_NotebookMenu,
                     SteamVR_Actions.default_JoystickSelection,
                     SteamVR_Actions.default_FakeGrab,
+                    SteamVR_Actions.default_DoorGrab,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Steering,
@@ -338,6 +350,7 @@ namespace Valve.VR
                     SteamVR_Actions.default_Notebook,
                     SteamVR_Actions.default_NotebookMenu,
                     SteamVR_Actions.default_FakeGrab,
+                    SteamVR_Actions.default_DoorGrab,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Brake,
                     SteamVR_Actions.buggy_Reset};
@@ -369,6 +382,7 @@ namespace Valve.VR
                     SteamVR_Actions.default_NotebookMenu,
                     SteamVR_Actions.default_JoystickSelection,
                     SteamVR_Actions.default_FakeGrab,
+                    SteamVR_Actions.default_DoorGrab,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Steering,
@@ -396,6 +410,7 @@ namespace Valve.VR
             SteamVR_Actions.p_default_NotebookMenu = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/NotebookMenu")));
             SteamVR_Actions.p_default_JoystickSelection = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/default/in/JoystickSelection")));
             SteamVR_Actions.p_default_FakeGrab = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/FakeGrab")));
+            SteamVR_Actions.p_default_DoorGrab = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/DoorGrab")));
             SteamVR_Actions.p_default_Haptic = ((SteamVR_Action_Vibration)(SteamVR_Action.Create<SteamVR_Action_Vibration>("/actions/default/out/Haptic")));
             SteamVR_Actions.p_platformer_Move = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/platformer/in/Move")));
             SteamVR_Actions.p_platformer_Jump = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/platformer/in/Jump")));
