@@ -12,26 +12,23 @@ namespace Valve.VR
 
         [SerializeField] private Animator doorAnim;
 
-        private bool isDoorOpen;
-
-        public void PlayAnimation()
+        private void Awake()
         {
-            if (!isDoorOpen)
-            {
-                doorAnim.Play("Door_open", 0, 0.0f);
-                isDoorOpen = true;
-            }
-            else
-            {
-                doorAnim.Play("Door_closed", 0, 0.0f);
-                isDoorOpen = false;
-            }
+            doorAnim.SetBool("Open", false);
         }
 
         private void OnTriggerEnter(Collider other)
         {
+
             if (trigger.GetStateDown(rightHand))
-                PlayAnimation();
+            {
+                if (!doorAnim.GetBool("Open"))
+                {
+                    doorAnim.SetBool("Open", true);
+                }
+                else
+                    doorAnim.SetBool("Open", false);
+            }
         }
     }
 }

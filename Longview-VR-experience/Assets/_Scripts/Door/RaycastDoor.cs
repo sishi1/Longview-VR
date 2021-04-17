@@ -37,7 +37,7 @@ namespace Valve.VR
                     if (trigger.GetStateDown(rightHand))
                     {
                         Debug.Log("Holding the doorknob");
-                        raycastedObj.PlayAnimation();
+                        //raycastedObj.PlayAnimation();
                     }
                 }
             } 
