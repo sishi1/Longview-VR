@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Valve.VR
+namespace Valve.VR.InteractionSystem
 {
     public class TriggerDoorController : MonoBehaviour
     {
@@ -12,6 +12,8 @@ namespace Valve.VR
 
         [SerializeField] private Animator doorAnim;
 
+        public static bool used = false;
+
         private void Awake()
         {
             doorAnim.SetBool("Open", false);
@@ -19,9 +21,10 @@ namespace Valve.VR
 
         private void OnTriggerEnter(Collider other)
         {
-
             if (trigger.GetStateDown(rightHand))
             {
+                used = true;
+
                 if (!doorAnim.GetBool("Open"))
                 {
                     doorAnim.SetBool("Open", true);

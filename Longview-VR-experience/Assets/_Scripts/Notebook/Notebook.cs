@@ -21,6 +21,8 @@ public class Notebook : MonoBehaviour
     public GameObject textObject;
     private TextMeshProUGUI textComponent;
 
+    public static bool used;
+
     void Start()
     {
         textComponent = textObject.GetComponent<TextMeshProUGUI>();
@@ -31,6 +33,8 @@ public class Notebook : MonoBehaviour
     {
         if (bButton.GetStateDown(rightHand))
         {
+            used = true;
+
             if (!notebookCanvas.enabled)
             {
                 notebookCanvas.enabled = true;

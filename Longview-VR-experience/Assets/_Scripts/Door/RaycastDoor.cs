@@ -13,7 +13,7 @@ namespace Valve.VR
         [SerializeField] private float length;
         [SerializeField] private LayerMask layermask;
 
-        private TriggerDoorController raycastedObj;
+        //private TriggerDoorController raycastedObj;
 
         private bool doOnce;
 
@@ -29,7 +29,7 @@ namespace Valve.VR
                 {
                     if (!doOnce)
                     {
-                        raycastedObj = hit.collider.gameObject.GetComponent<TriggerDoorController>();
+                        //raycastedObj = hit.collider.gameObject.GetComponent<TriggerDoorController>();
                     }
 
                     doOnce = true;
