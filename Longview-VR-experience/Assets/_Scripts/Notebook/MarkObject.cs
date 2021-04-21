@@ -29,43 +29,38 @@ public class MarkObject : MonoBehaviour
     [HideInInspector]
     public string selection;
 
-    private bool triggerPressed;
-
+    private int childCount;
+    private int maxChildCount;
 
     private void Start()
     {
         markObjectCanvas = markObjectUI.GetComponent<Canvas>();
+        childCount = Player.instance.rightHand.gameObject.transform.childCount + 0;
+        maxChildCount = 11;
     }
 
     private void Update()
     {
-        RaycastHit hit;
-
-        //Checks whether the raycast found a object of the specified layer 
-        if (Physics.Raycast(controller.position, controller.forward, out hit, range, checkLayer))
+        //Checks whether the player has an object in hand
+        if (Player.instance.rightHand.gameObject.transform.childCount != childCount)
         {
+            Debug.Log("Child count: " + Player.instance.rightHand.gameObject.transform.childCount);
+            //Attach the object in hand in the variable
+            selectedObject = Player.instance.rightHand.transform.GetChild(Player.instance.rightHand.transform.childCount -1).gameObject;
+            Debug.Log("Object selected: " + selectedObject);
+            objectState = selectedObject.GetComponent<ObjectState>();
+        }
 
-            Debug.Log("Interacted with: " + hit.collider.gameObject);
-            if (trigger.GetStateDown(rightHand))
-                triggerPressed = true;
-
-            if (hit.collider.gameObject != selectedObject)
-            {
-                selectedObject = hit.collider.gameObject;
-                objectState = selectedObject.GetComponent<ObjectState>();
-            }
-
-            if (aButton.GetStateDown(rightHand) && triggerPressed)
+        Debug.Log($"<b>markobject </b> A button state: {aButton.GetStateDown(rightHand)} Trigger state: {trigger.GetStateDown(rightHand)}");
+        //Two buttons can't be true at the same time, hence why trigger state is false since that's the first button that was activated and becomes false
+        if (aButton.GetStateDown(rightHand) && !trigger.GetStateDown(rightHand))
+            if (Player.instance.rightHand.transform.childCount == maxChildCount)
                 markObjectCanvas.enabled = true;
+            else
+                return;
 
+        if (markObjectCanvas.enabled)
             JoystickSelection();
-
-        }
-        else
-        {
-            markObjectCanvas.enabled = false;
-            triggerPressed = false;
-        }
     }
 
     private void JoystickSelection()
@@ -134,5 +129,6 @@ public class MarkObject : MonoBehaviour
     private void ResetStatus()
     {
         selection = "";
+        markObjectCanvas.enabled = false;
     }
 }
