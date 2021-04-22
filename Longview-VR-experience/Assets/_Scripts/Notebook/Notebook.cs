@@ -1,64 +1,65 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR;
 using TMPro;
 
-public class Notebook : MonoBehaviour
+namespace Valve.VR
 {
-    [Header("SteamVR Input")]
-    public SteamVR_Input_Sources rightHand;
-    public SteamVR_Action_Boolean bButton;
-
-    [Header("Marked Objects")]
-    public List<string> markedObjectsForInterest = new List<string>();
-    public List<string> markedObjectsForConfiscate = new List<string>();
-    public List<string> markedObjectsForSpecialist = new List<string>();
-
-    [Header("UI")]
-    public GameObject notebook;
-    private Canvas notebookCanvas;
-    public GameObject textObject;
-    private TextMeshProUGUI textComponent;
-
-    public static bool used;
-
-    void Start()
+    public class Notebook : MonoBehaviour
     {
-        textComponent = textObject.GetComponent<TextMeshProUGUI>();
-        notebookCanvas = notebook.GetComponent<Canvas>();
-    }
+        [Header("SteamVR Input")]
+        public SteamVR_Input_Sources rightHand;
+        public SteamVR_Action_Boolean bButton;
 
-    void Update()
-    {
-        if (bButton.GetStateDown(rightHand))
+        [Header("Marked Objects")]
+        public List<string> markedObjectsForInterest = new List<string>();
+        public List<string> markedObjectsForConfiscate = new List<string>();
+        public List<string> markedObjectsForSpecialist = new List<string>();
+
+        [Header("UI")]
+        public GameObject notebook;
+        private Canvas notebookCanvas;
+        public GameObject textObject;
+        private TextMeshProUGUI textComponent;
+
+        void Start()
         {
-            used = true;
+            textComponent = textObject.GetComponent<TextMeshProUGUI>();
+            notebookCanvas = notebook.GetComponent<Canvas>();
+        }
 
-            if (!notebookCanvas.enabled)
+        void Update()
+        {
+            if (bButton.GetStateDown(rightHand))
             {
-                notebookCanvas.enabled = true;
+                StaticVariables.noteBookUsed = true;
 
-                textComponent.text = "<#FFFF00>" + "Interessant:" + "</color>" + "\n";
-                foreach (string markedObject in markedObjectsForInterest)
+                if (!notebookCanvas.enabled)
                 {
-                    textComponent.text += "- " + markedObject + "\n";
-                }
+                    notebookCanvas.enabled = true;
 
-                textComponent.text += "\n" + "<#00FF00>" + "In beslag nemen:" + "</color>" + "\n";
-                foreach (string markedObject in markedObjectsForConfiscate)
-                {
-                    textComponent.text += "- " + markedObject + "\n";
-                }
+                    textComponent.text = "<#FFFF00>" + "Interessant:" + "</color>" + "\n";
+                    foreach (string markedObject in markedObjectsForInterest)
+                    {
+                        textComponent.text += "- " + markedObject + "\n";
+                    }
 
-                textComponent.text += "\n" + "<#00BEFF>" + "Specialist:" + "</color>" + "\n";
-                foreach (string markedObject in markedObjectsForSpecialist)
-                {
-                    textComponent.text += "- " + markedObject + "\n";
+                    textComponent.text += "\n" + "<#00FF00>" + "In beslag nemen:" + "</color>" + "\n";
+                    foreach (string markedObject in markedObjectsForConfiscate)
+                    {
+                        textComponent.text += "- " + markedObject + "\n";
+                    }
+
+                    textComponent.text += "\n" + "<#00BEFF>" + "Specialist:" + "</color>" + "\n";
+                    foreach (string markedObject in markedObjectsForSpecialist)
+                    {
+                        textComponent.text += "- " + markedObject + "\n";
+                    }
                 }
+                else
+                    notebookCanvas.enabled = false;
             }
-            else
-                notebookCanvas.enabled = false;
         }
     }
 }
+

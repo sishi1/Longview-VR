@@ -27,10 +27,10 @@ namespace Valve.VR.InteractionSystem
         {
             foreach (Hand hand in player.hands)
             {
-                if (TriggerDoorController.used)
+                if (StaticVariables.doorUsed)
                     ControllerButtonHints.HideTextHint(hand, openDoorButton);
 
-                if (Notebook.used)
+                if (StaticVariables.noteBookUsed)
                     ControllerButtonHints.HideTextHint(hand, notebookButton);
 
             }

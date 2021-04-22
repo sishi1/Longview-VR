@@ -12,8 +12,6 @@ namespace Valve.VR.InteractionSystem
 
         [SerializeField] private Animator doorAnim;
 
-        public static bool used = false;
-
         private void Awake()
         {
             doorAnim.SetBool("Open", false);
@@ -23,7 +21,7 @@ namespace Valve.VR.InteractionSystem
         {
             if (trigger.GetStateDown(rightHand))
             {
-                used = true;
+                StaticVariables.doorUsed = true;
 
                 if (!doorAnim.GetBool("Open"))
                 {
