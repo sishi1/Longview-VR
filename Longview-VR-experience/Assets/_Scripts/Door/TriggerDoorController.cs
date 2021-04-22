@@ -6,30 +6,36 @@ namespace Valve.VR.InteractionSystem
 {
     public class TriggerDoorController : MonoBehaviour
     {
+        private Player player = null;
         [Header("SteamVR Input")]
-        public SteamVR_Input_Sources rightHand;
+        public SteamVR_Input_Sources hands;
         public SteamVR_Action_Boolean trigger;
 
         [SerializeField] private Animator doorAnim;
 
-        private void Awake()
+        private void Start()
         {
+            player = Player.instance;
             doorAnim.SetBool("Open", false);
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            if (trigger.GetStateDown(rightHand))
+            foreach (Hand hand in player.hands)
             {
-                StaticVariables.doorUsed = true;
-
-                if (!doorAnim.GetBool("Open"))
+                if (trigger.GetStateDown(hands))
                 {
-                    doorAnim.SetBool("Open", true);
+                    StaticVariables.doorUsed = true;
+
+                    if (!doorAnim.GetBool("Open"))
+                    {
+                        doorAnim.SetBool("Open", true);
+                    }
+                    else
+                        doorAnim.SetBool("Open", false);
                 }
-                else
-                    doorAnim.SetBool("Open", false);
             }
+            
         }
     }
 }

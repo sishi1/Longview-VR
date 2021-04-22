@@ -16,7 +16,7 @@ namespace Valve.VR.InteractionSystem
         private Canvas markObjectCanvas;
 
         [Header("SteamVR Input")]
-        public SteamVR_Input_Sources rightHand;
+        public SteamVR_Input_Sources hands;
         public SteamVR_Action_Boolean aButton;
         public SteamVR_Action_Vector2 joystickSelection;
         public SteamVR_Action_Boolean trigger;
@@ -33,8 +33,10 @@ namespace Valve.VR.InteractionSystem
         [HideInInspector]
         public string selection;
 
-        private int childCount;
-        private int maxChildCount;
+        private int childCountRightHand;
+        private int childCountLeftHand;
+        private int maxChildCountRightHand;
+        private int maxChildCountLeftHand;
 
         private bool usedAButton;
         private bool usedJoystick;
@@ -43,27 +45,43 @@ namespace Valve.VR.InteractionSystem
         {
             player = Player.instance;
             markObjectCanvas = markObjectUI.GetComponent<Canvas>();
-            childCount = Player.instance.rightHand.gameObject.transform.childCount + 0;
-            maxChildCount = 11;
+
+            childCountRightHand = player.rightHand.gameObject.transform.childCount + 0;
+            childCountLeftHand = player.leftHand.gameObject.transform.childCount + 0;
+
+            maxChildCountRightHand = 11;
+            maxChildCountLeftHand = 7;
         }
 
         private void Update()
         {
+            Debug.Log($"<b>markobject <b> Object state: {objectState} Selected object: {selectedObject}");
+            Debug.Log($"<b>markobject </b> Right standard child count: {childCountRightHand} Right child count: {player.rightHand.gameObject.transform.childCount}");
+            Debug.Log($"<b>markobject </b> Left standard child count: {childCountLeftHand} Left child count: {player.leftHand.gameObject.transform.childCount}");
+
             //Checks whether the player has an object in hand
-            if (player.rightHand.gameObject.transform.childCount != childCount)
+            if (player.rightHand.gameObject.transform.childCount != childCountRightHand)
             {
                 //Attach the object in hand in the variable
                 selectedObject = player.rightHand.transform.GetChild(player.rightHand.transform.childCount - 1).gameObject;
                 objectState = selectedObject.GetComponent<ObjectState>();
-                
+            } 
+            
+            if (player.leftHand.gameObject.transform.childCount != childCountLeftHand)
+            {
+                //Attach the object in hand in the variable
+                selectedObject = player.leftHand.transform.GetChild(player.leftHand.transform.childCount - 1).gameObject;
+                objectState = selectedObject.GetComponent<ObjectState>();
             }
 
-            if (player.rightHand.transform.childCount == maxChildCount && !usedAButton)
+            if ((player.rightHand.transform.childCount == maxChildCountRightHand ||
+                player.leftHand.transform.childCount == maxChildCountLeftHand) && !usedAButton)
                 OpenHint(aButton, openSelectionMenuHint);
 
             //Two buttons can't be true at the same time, hence why trigger state is false since that's the first button that was activated and becomes false
-            if (aButton.GetStateDown(rightHand) && !trigger.GetStateDown(rightHand))
-                if (player.rightHand.transform.childCount == maxChildCount)
+            if (aButton.GetStateDown(hands) && !trigger.GetStateDown(hands))
+                if (player.rightHand.transform.childCount == maxChildCountRightHand ||
+                    player.leftHand.transform.childCount == maxChildCountLeftHand)
                 {
                     usedAButton = true;
                     markObjectCanvas.enabled = true;
@@ -80,8 +98,9 @@ namespace Valve.VR.InteractionSystem
             }
 
             //Reset everything when you stop holding an object in hand
-            if (!aButton.GetStateDown(rightHand) && !trigger.GetStateDown(rightHand))
-                if (player.rightHand.transform.childCount != maxChildCount)
+            if (!aButton.GetStateDown(hands) && !trigger.GetStateDown(hands))
+                if (player.rightHand.transform.childCount != maxChildCountRightHand &&
+                    player.leftHand.transform.childCount != maxChildCountLeftHand)
                     ResetStatus();
         }
 

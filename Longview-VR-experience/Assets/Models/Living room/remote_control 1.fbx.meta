@@ -1,0 +1,252 @@
+fileFormatVersion: 2
+guid: 1dbc272d2e39ac54781026d932dadc15
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arrows
+    second: {fileID: 2100000, guid: d161f7ca8c4d1894d836b29de2e6663c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BackForward
+    second: {fileID: 2100000, guid: bea30b4fea64c8b4bb6292e9d8ebe659, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ColorButtons
+    second: {fileID: 2100000, guid: 01a6deeb5cb1e934c9be0bbbb24cd706, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Connectors
+    second: {fileID: 2100000, guid: acd24d679e2599a4dbaf6afec685556c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eight
+    second: {fileID: 2100000, guid: cd0ee7714f4b73b4c8ea1bf4a2468218, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Five
+    second: {fileID: 2100000, guid: bd84f12ce50776f4084657333a3f5c69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Four
+    second: {fileID: 2100000, guid: 6711eba32ad68c84083c27c429026a16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GuideButton
+    second: {fileID: 2100000, guid: eac0cf8b2186ce74bb984afa948f2b8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: InfraRedThing
+    second: {fileID: 2100000, guid: f962ee8adf2d9834487a94aca4379db9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Menu
+    second: {fileID: 2100000, guid: 7aaeb2c88b5275a47917ef5429525753, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mute
+    second: {fileID: 2100000, guid: 8a9599c7a415f0747b8732b1d9906883, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Nine
+    second: {fileID: 2100000, guid: 8cfe9c3348870ec4ba89e794878db750, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OKButton
+    second: {fileID: 2100000, guid: 16d98c258fb6e8844967ef4d3fece856, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: One
+    second: {fileID: 2100000, guid: d3bc7842de3fa274ebe2f722bb9eb3f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PausePlay
+    second: {fileID: 2100000, guid: 8d39901a7a4bb8544acdfdc79e44bdcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PowerButton
+    second: {fileID: 2100000, guid: ac1dca56d83dfbf4b9718db691f435ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ProgramDown
+    second: {fileID: 2100000, guid: 8649ca0ebd886634382a2a8658aa7be3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ProgramUp
+    second: {fileID: 2100000, guid: 3fbdde0d70644bc439a33d790312ead8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Quit
+    second: {fileID: 2100000, guid: 2e3f83c7177487649811223e6cf34374, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RandomButton
+    second: {fileID: 2100000, guid: 7d3c210827afdcb4cb0cd9be1e7c2b18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Record
+    second: {fileID: 2100000, guid: c4523295e0887c848b86ac2a59507e53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Remote_Control
+    second: {fileID: 2100000, guid: a8c2e3592e88f0c4ea27742f366ceecf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seven
+    second: {fileID: 2100000, guid: b1bb70bf62674f741bc584e4876ff0c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Six
+    second: {fileID: 2100000, guid: f90592a00bff49b42adbef145a0c915d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stop
+    second: {fileID: 2100000, guid: e911a01882674a043a7f156d0f3dd80c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Three
+    second: {fileID: 2100000, guid: 5f4a24c153268dd41b466023ae7f4f3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Two
+    second: {fileID: 2100000, guid: ce59bd45b77b5324485013ee01ffa7c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VolumeDown
+    second: {fileID: 2100000, guid: 83c4e9dc29271b644a32365b82ae5247, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VolumeUp
+    second: {fileID: 2100000, guid: acb14fd1dcd48954bb208624b4f535bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Zero
+    second: {fileID: 2100000, guid: d0d3cee3b308ed54abcc414af11ceeb6, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1.5
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1.5
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

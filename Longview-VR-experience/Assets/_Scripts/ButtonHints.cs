@@ -82,6 +82,7 @@ namespace Valve.VR.InteractionSystem
                     break;
 
                 case null:
+                    Debug.LogErrorFormat("Something went wrong in the switch statement", hintObject);
                     break;
             }
         }
