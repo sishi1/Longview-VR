@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 510262196}
   markObjectUI: {fileID: 1555698094}
+  steamVRTeleport: {fileID: 1499589906}
   hands: 0
   aButton:
     actionPath: /actions/default/in/NotebookMenu
@@ -163,6 +164,12 @@ MonoBehaviour:
     needsReinit: 0
   trigger:
     actionPath: /actions/default/in/FakeGrab
+    needsReinit: 0
+  turnLeft:
+    actionPath: 
+    needsReinit: 0
+  turnRight:
+    actionPath: 
     needsReinit: 0
   openSelectionMenuHint: Open selection
   joystickSelectionHint: Move joystick
@@ -4480,6 +4487,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc3be917a80086a48b97933694257f09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1499589906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8814071318025903037, guid: 68449c0789f826e4da77585b96256173, type: 3}
+  m_PrefabInstance: {fileID: 8814071319310587612}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1514952322
 PrefabInstance:
   m_ObjectHideFlags: 0

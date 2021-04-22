@@ -15,11 +15,16 @@ namespace Valve.VR.InteractionSystem
         public GameObject markObjectUI;
         private Canvas markObjectCanvas;
 
+        [SerializeField]
+        private GameObject steamVRTeleport;
+
         [Header("SteamVR Input")]
         public SteamVR_Input_Sources hands;
         public SteamVR_Action_Boolean aButton;
         public SteamVR_Action_Vector2 joystickSelection;
         public SteamVR_Action_Boolean trigger;
+        public SteamVR_Action_Boolean turnLeft;
+        public SteamVR_Action_Boolean turnRight;
 
         [Header("Hints")]
         [SerializeField]
@@ -40,6 +45,8 @@ namespace Valve.VR.InteractionSystem
 
         private bool usedAButton;
         private bool usedJoystick;
+        private bool objectInHand = false;
+
 
         private void Start()
         {
@@ -55,23 +62,33 @@ namespace Valve.VR.InteractionSystem
 
         private void Update()
         {
-            Debug.Log($"<b>markobject <b> Object state: {objectState} Selected object: {selectedObject}");
+            if (selectedObject != null)
+                Debug.Log($"<b>markobject </b> Object state: {(objectState == null ? "null" : objectState.ToString())} Selected object: {selectedObject.name}");
+            
             Debug.Log($"<b>markobject </b> Right standard child count: {childCountRightHand} Right child count: {player.rightHand.gameObject.transform.childCount}");
             Debug.Log($"<b>markobject </b> Left standard child count: {childCountLeftHand} Left child count: {player.leftHand.gameObject.transform.childCount}");
 
             //Checks whether the player has an object in hand
-            if (player.rightHand.gameObject.transform.childCount != childCountRightHand)
+            if (player.rightHand.gameObject.transform.childCount != childCountRightHand && !objectInHand)
             {
                 //Attach the object in hand in the variable
                 selectedObject = player.rightHand.transform.GetChild(player.rightHand.transform.childCount - 1).gameObject;
                 objectState = selectedObject.GetComponent<ObjectState>();
-            } 
-            
-            if (player.leftHand.gameObject.transform.childCount != childCountLeftHand)
+                objectInHand = objectState != null;
+
+                if (objectInHand)
+                    steamVRTeleport.SetActive(false);
+            }
+
+            if (player.leftHand.gameObject.transform.childCount != childCountLeftHand && !objectInHand)
             {
                 //Attach the object in hand in the variable
                 selectedObject = player.leftHand.transform.GetChild(player.leftHand.transform.childCount - 1).gameObject;
                 objectState = selectedObject.GetComponent<ObjectState>();
+                objectInHand = objectState != null;
+
+                if (objectInHand)
+                    steamVRTeleport.SetActive(false);
             }
 
             if ((player.rightHand.transform.childCount == maxChildCountRightHand ||
@@ -87,7 +104,7 @@ namespace Valve.VR.InteractionSystem
                     markObjectCanvas.enabled = true;
                 }
 
-            if (markObjectCanvas.enabled)
+            if (markObjectCanvas.enabled && objectState != null)
             {
                 HideHint(aButton);
 
@@ -190,6 +207,8 @@ namespace Valve.VR.InteractionSystem
         {
             selection = "";
             markObjectCanvas.enabled = false;
+            objectInHand = false;
+            steamVRTeleport.SetActive(true);
         }
     }
 }
