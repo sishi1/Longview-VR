@@ -23,6 +23,11 @@ namespace Valve.VR.InteractionSystem
         private void Update()
         {
             this.transform.position = player.trackingOriginTransform.position;
+
+            if (audioSource.isPlaying)
+                StaticVariables.isOnboardingPlaying = true;
+            else
+                StaticVariables.isOnboardingPlaying = false;
         }
 
         private IEnumerator PlayAudio()
