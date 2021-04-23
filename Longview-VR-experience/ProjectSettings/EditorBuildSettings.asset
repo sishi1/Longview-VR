@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Outside.unity
     guid: d554a929c7c21fa49a0c377ba9043fbd
   - enabled: 1
