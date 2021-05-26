@@ -17,7 +17,6 @@ namespace Valve.VR.InteractionSystem
 
         private IEnumerator PlayAudio()
         {
-            yield return new WaitForSeconds(6);
 
             while (StaticVariables.isOnboardingPlaying)
                 yield return null;
