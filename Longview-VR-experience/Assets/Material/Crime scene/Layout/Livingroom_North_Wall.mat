@@ -21,11 +21,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 4b1dbde3f85b5f6438e77e8d46cccac3, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4d7b84a4991ce57469e3edabc961ae5c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 2fb1e6f4cd4e6544b86fe12e3606262b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6bbc8b7188bbf1c40b9d96e6c9c16829, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -45,19 +45,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4b1dbde3f85b5f6438e77e8d46cccac3, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4d7b84a4991ce57469e3edabc961ae5c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 8463adb2ec6e2f34291f5b24568a692c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 46048c4f3b0792c448325c2d9d8480b8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: fa6feca94b2acea4e98a09a7619b33f4, type: 3}
+        m_Texture: {fileID: 2800000, guid: e8c24bc990e2fb84ba31b8450aca0f62, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: 67ad6b78733c60243b1e24bf7d63f95e, type: 3}
+        m_Texture: {fileID: 2800000, guid: de645251eb7a8494aad72c914868f83b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -106,7 +106,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.7353569, g: 0.7353569, b: 0.7353569, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
