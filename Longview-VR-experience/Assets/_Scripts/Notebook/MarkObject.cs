@@ -15,16 +15,14 @@ namespace Valve.VR.InteractionSystem
         public GameObject markObjectUI;
         private Canvas markObjectCanvas;
 
-        [SerializeField]
-        private GameObject steamVRTeleport;
+        [SerializeField] private GameObject steamVRTeleport;
+        [SerializeField] private GameObject snapTurn;
 
         [Header("SteamVR Input")]
         public SteamVR_Input_Sources hands;
         public SteamVR_Action_Boolean aButton;
         public SteamVR_Action_Vector2 joystickSelection;
         public SteamVR_Action_Boolean trigger;
-        public SteamVR_Action_Boolean turnLeft;
-        public SteamVR_Action_Boolean turnRight;
 
         [Header("Hints")]
         [SerializeField]
@@ -77,7 +75,11 @@ namespace Valve.VR.InteractionSystem
                 objectInHand = objectState != null;
 
                 if (objectInHand)
+                {
+                    StaticVariables.joystickMovementActive = false;
                     steamVRTeleport.SetActive(false);
+                    snapTurn.SetActive(false);
+                }
             }
 
             if (player.leftHand.gameObject.transform.childCount != childCountLeftHand && !objectInHand)
@@ -88,7 +90,11 @@ namespace Valve.VR.InteractionSystem
                 objectInHand = objectState != null;
 
                 if (objectInHand)
+                {
+                    StaticVariables.joystickMovementActive = false;
                     steamVRTeleport.SetActive(false);
+                    snapTurn.SetActive(false);
+                }
             }
 
             if ((player.rightHand.transform.childCount == maxChildCountRightHand ||
@@ -208,7 +214,14 @@ namespace Valve.VR.InteractionSystem
             selection = "";
             markObjectCanvas.enabled = false;
             objectInHand = false;
-            steamVRTeleport.SetActive(true);
+
+            if (StaticVariables.locomotionStatus == "teleport")
+            {
+                steamVRTeleport.SetActive(true);
+                snapTurn.SetActive(true);
+            }
+            else if (StaticVariables.locomotionStatus == "joystick")
+                StaticVariables.joystickMovementActive = true;
         }
     }
 }

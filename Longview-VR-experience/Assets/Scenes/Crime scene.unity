@@ -155,6 +155,7 @@ MonoBehaviour:
   controller: {fileID: 510262196}
   markObjectUI: {fileID: 1555698094}
   steamVRTeleport: {fileID: 1499589906}
+  snapTurn: {fileID: 566294251}
   hands: 0
   aButton:
     actionPath: /actions/default/in/NotebookMenu
@@ -164,12 +165,6 @@ MonoBehaviour:
     needsReinit: 0
   trigger:
     actionPath: /actions/default/in/FakeGrab
-    needsReinit: 0
-  turnLeft:
-    actionPath: 
-    needsReinit: 0
-  turnRight:
-    actionPath: 
     needsReinit: 0
   openSelectionMenuHint: Open selection
   joystickSelectionHint: Move joystick
@@ -2314,6 +2309,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -60.497
       objectReference: {fileID: 0}
+    - target: {fileID: 6491314, guid: 652f1b1c2ef586f45ac26a1ddffab296, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 652f1b1c2ef586f45ac26a1ddffab296, type: 3}
 --- !u!1001 &350811475
@@ -3169,9 +3168,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4640691693175718555, guid: 6a7d50e6fd0547a49bfce0ee5cfc6219, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4640691693175718555, guid: 6a7d50e6fd0547a49bfce0ee5cfc6219, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a7d50e6fd0547a49bfce0ee5cfc6219, type: 3}
       propertyPath: m_Name
       value: Carpet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5893413765187788434, guid: 6a7d50e6fd0547a49bfce0ee5cfc6219, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5893413765187788434, guid: 6a7d50e6fd0547a49bfce0ee5cfc6219, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a7d50e6fd0547a49bfce0ee5cfc6219, type: 3}
@@ -3886,6 +3901,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb29c575e92ab64eb62ee335dc6f563, type: 3}
+--- !u!1 &566294251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2936085382965706742, guid: ce8db27519b26c6409d5d72bcea2a62e, type: 3}
+  m_PrefabInstance: {fileID: 2935396533700404339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &577865934
 GameObject:
   m_ObjectHideFlags: 0
@@ -4501,7 +4521,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &724361566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4712,6 +4732,22 @@ PrefabInstance:
     - target: {fileID: 8734683093269929949, guid: 1ca67c40da6abbe4ba0faa03566bcd0e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.618
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080980485851644818, guid: 1ca67c40da6abbe4ba0faa03566bcd0e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080980485851644818, guid: 1ca67c40da6abbe4ba0faa03566bcd0e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189518765186416358, guid: 1ca67c40da6abbe4ba0faa03566bcd0e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189518765186416358, guid: 1ca67c40da6abbe4ba0faa03566bcd0e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca67c40da6abbe4ba0faa03566bcd0e, type: 3}
@@ -6692,6 +6728,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8004701885317830856, guid: b761d177ceb28cf4d891238536ba2266, type: 3}
   m_PrefabInstance: {fileID: 942884893}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &963213188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2935396533748263982, guid: ce8db27519b26c6409d5d72bcea2a62e, type: 3}
+  m_PrefabInstance: {fileID: 2935396533700404339}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &963213190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963213188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b6f8f80fb348c4bb8c29c627db0cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftHand: 1
+  yButton:
+    actionPath: /actions/default/in/ChangeLocomotion
+    needsReinit: 0
+  changeLocomotion:
+    actionPath: /actions/default/in/ChoiceLocomotion
+    needsReinit: 0
+  steamVRTeleport: {fileID: 1499589906}
+  snapTurn: {fileID: 566294251}
+--- !u!54 &963213191
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963213188}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!136 &963213192
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963213188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &963213193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963213188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eace65b44edb98d4ea9fc363ab96330e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touchpadInput:
+    actionPath: /actions/default/in/TouchpadInput
+    needsReinit: 0
+  turnInput:
+    actionPath: /actions/default/in/TurnInput
+    needsReinit: 0
+  speed: 1
 --- !u!4 &970146226 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4cba2a89bce5afb48b8de45b6ef1b303, type: 3}
@@ -17380,6 +17491,10 @@ PrefabInstance:
       propertyPath: flashColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2935396533748180088, guid: ce8db27519b26c6409d5d72bcea2a62e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2935396533748218576, guid: ce8db27519b26c6409d5d72bcea2a62e, type: 3}
       propertyPath: m_TagString
       value: Untagged
@@ -22676,6 +22791,10 @@ PrefabInstance:
     - target: {fileID: 8814071318025903037, guid: 68449c0789f826e4da77585b96256173, type: 3}
       propertyPath: m_Name
       value: Teleporting
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814071318025903037, guid: 68449c0789f826e4da77585b96256173, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8814071318207860748, guid: 68449c0789f826e4da77585b96256173, type: 3}
       propertyPath: m_RootOrder
