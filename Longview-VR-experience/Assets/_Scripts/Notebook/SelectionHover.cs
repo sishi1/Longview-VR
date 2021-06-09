@@ -8,7 +8,7 @@ namespace Valve.VR.InteractionSystem
     {
         public GameObject objectHightlight;
         private MarkObject markObject;
-        private RectTransform rectTransform;
+        private Transform t;
         private bool hovered;
 
         public bool interesting;
@@ -19,7 +19,7 @@ namespace Valve.VR.InteractionSystem
         void Start()
         {
             markObject = objectHightlight.GetComponent<MarkObject>();
-            rectTransform = GetComponent<RectTransform>();
+            t = GetComponent<Transform>();
         }
 
         void Update()
@@ -30,7 +30,7 @@ namespace Valve.VR.InteractionSystem
                 (nothing && markObject.selection == "nothing"))
             {
                 hovered = true;
-                rectTransform.sizeDelta = new Vector2(0.07f, 0.07f);
+                t.localScale = new Vector2(0.07f, 0.07f);
             }
             else if (hovered)
             {
@@ -39,7 +39,7 @@ namespace Valve.VR.InteractionSystem
 
             if (!hovered)
             {
-                rectTransform.sizeDelta = new Vector2(0.05f, 0.05f);
+                t.localScale = new Vector2(0.05f, 0.05f);
             }
         }
     }
