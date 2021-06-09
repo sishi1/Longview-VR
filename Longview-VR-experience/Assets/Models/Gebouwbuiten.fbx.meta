@@ -1,0 +1,287 @@
+fileFormatVersion: 2
+guid: 2b15bd40dcfd91041b66f95f2a0d1f5c
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balkon1stfloor1
+    second: {fileID: 2100000, guid: 5f1029247298a9b49a03f4735bbaf3fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balkon1stfloorrail1
+    second: {fileID: 2100000, guid: a41682a46957d9f40a645bc3993334a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balkon2ndfloor1
+    second: {fileID: 2100000, guid: 5f1029247298a9b49a03f4735bbaf3fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balkon2ndfloorrail1
+    second: {fileID: 2100000, guid: a41682a46957d9f40a645bc3993334a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balkon2ndfloorrailpiece1
+    second: {fileID: 2100000, guid: ceed92f706b750a459b27a64a8f86fc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balkon3rdfloor1
+    second: {fileID: 2100000, guid: 5f1029247298a9b49a03f4735bbaf3fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balkon3rdfloorrail1
+    second: {fileID: 2100000, guid: a41682a46957d9f40a645bc3993334a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balkon4thfloor1
+    second: {fileID: 2100000, guid: 5f1029247298a9b49a03f4735bbaf3fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balkon5thfloor1
+    second: {fileID: 2100000, guid: 5f1029247298a9b49a03f4735bbaf3fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balkon5thfloorrail1
+    second: {fileID: 2100000, guid: a41682a46957d9f40a645bc3993334a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balkon6thfloor1
+    second: {fileID: 2100000, guid: 5f1029247298a9b49a03f4735bbaf3fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balkon6thfloorrail2
+    second: {fileID: 2100000, guid: a41682a46957d9f40a645bc3993334a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balkon6thfloorrail3
+    second: {fileID: 2100000, guid: a41682a46957d9f40a645bc3993334a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Linkerkantgebouw1
+    second: {fileID: 2100000, guid: 6e8b2e05eb7e62a4db2820c84bb6ec17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None
+    second: {fileID: 2100000, guid: 3a3be04f4a897ca4e80cbd97673ae76d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Onderkant1
+    second: {fileID: 2100000, guid: 7b5069fa24ff16c4981b660db848b7bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Onderkantgebouw1
+    second: {fileID: 2100000, guid: 66ce0061d6986a6488596c6a13973e0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Outlinesmiddengebouw1
+    second: {fileID: 2100000, guid: 8cc2a77397f18084c9d85e1c638428d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ramen6then5thfloor1
+    second: {fileID: 2100000, guid: fc9851c7353c67e45ac415c196015f3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ramen6thfloor1
+    second: {fileID: 2100000, guid: 09c0548beb0369445b6426b370e1b8fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZijkantLijnen
+    second: {fileID: 2100000, guid: 4690d8c047315674eb508d5893d99dc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: deur2ndfloor1
+    second: {fileID: 2100000, guid: 64bcb28846219ea4e8526cfc1fad75f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: deur3rdfloor3
+    second: {fileID: 2100000, guid: 64bcb28846219ea4e8526cfc1fad75f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: deur3rdfloor4
+    second: {fileID: 2100000, guid: 64bcb28846219ea4e8526cfc1fad75f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: deur4thfloor3
+    second: {fileID: 2100000, guid: 64bcb28846219ea4e8526cfc1fad75f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: deur4thfloor4
+    second: {fileID: 2100000, guid: 64bcb28846219ea4e8526cfc1fad75f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floorDRIE
+    second: {fileID: 2100000, guid: d396831fd352acf41aa5e653462102ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floorEEN
+    second: {fileID: 2100000, guid: 2eece9d5db419944c9eced597335417d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floorTWEE
+    second: {fileID: 2100000, guid: 5856b480af690c44cbf750fa936a0239, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floorVIER
+    second: {fileID: 2100000, guid: f1ceb486572ef5c42a2fe72bb4640c66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floorVIJF
+    second: {fileID: 2100000, guid: ef9d78998b3df9c40b1c8f92a49fe4a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floorZES
+    second: {fileID: 2100000, guid: eb55a57dbe9149b45bca695b665400b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lijnenonderkant1
+    second: {fileID: 2100000, guid: 3115f7b92559f1c45ae0c10fb05fcee7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ramen1sten2ndfloor1
+    second: {fileID: 2100000, guid: 6902d8ef318039b4fa14df8af789f24e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ramen2ndfloor1
+    second: {fileID: 2100000, guid: 6902d8ef318039b4fa14df8af789f24e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ramen4then3rdfloor1
+    second: {fileID: 2100000, guid: 6902d8ef318039b4fa14df8af789f24e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ramen4thfloor1
+    second: {fileID: 2100000, guid: 6902d8ef318039b4fa14df8af789f24e, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

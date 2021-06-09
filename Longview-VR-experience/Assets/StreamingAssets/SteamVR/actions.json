@@ -78,6 +78,22 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/TouchpadInput",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/default/in/TurnInput",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/default/in/ChangeLocomotion",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/ChoiceLocomotion",
+      "type": "vector2"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -204,7 +220,11 @@
       "/actions/default/in/NotebookMenu": "NotebookMenu",
       "/actions/default/in/JoystickSelection": "JoyStickSelection",
       "/actions/default/in/FakeGrab": "FakeGrab",
-      "/actions/default/in/DoorGrab": "DoorGrab"
+      "/actions/default/in/DoorGrab": "DoorGrab",
+      "/actions/default/in/TouchpadInput": "TouchpadInput",
+      "/actions/default/in/TurnInput": "TurnInput",
+      "/actions/default/in/ChangeLocomotion": "ChangeLocomotion",
+      "/actions/default/in/ChoiceLocomotion": "ChoiceLocomotion"
     }
   ]
 }

@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PhysicsPointer : MonoBehaviour
 {
-    public float defaultLength = 3.0f;
+    [SerializeField] private float defaultLength = 3.0f;
 
     private LineRenderer lineRenderer = null;
 
     private void Awake()
     {
         lineRenderer = GetComponent<LineRenderer>();
+        StaticVariables.lineLength = defaultLength;
     }
 
     private void Update()

@@ -1,9 +1,84 @@
 fileFormatVersion: 2
-guid: 56137649b3e09094393e1c961708fefa
+guid: 6c163d09dae82ca47aa7e0bd81425dd3
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_LifeJacket1
+    second: {fileID: 2100000, guid: 5be65383aac54ae448769b19af804e94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Pants1
+    second: {fileID: 2100000, guid: 038bbaa557dd7e04eb372cd1a4f373e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Scene_2_Eye_Iris_Mat
+    second: {fileID: 2100000, guid: 14cd2198cb6144848bb84f9a68ae7724, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Scene_2_aiStandardSurface2
+    second: {fileID: 2100000, guid: f2a086396dda046428b4651ed02c3eea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Shirt1
+    second: {fileID: 2100000, guid: 4e488b7944db3bc4a81dde34f394670d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_aiStandardSurface4
+    second: {fileID: 2100000, guid: ed69d622522ac4b4e83cdba0e758452b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_aiStandardSurface5
+    second: {fileID: 2100000, guid: cdd3902c95c8ff845a2fa90e5c0f2dcb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_aiStandardSurface6
+    second: {fileID: 2100000, guid: 34b9f9220d5ee79409d06192ebd4342c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_aiStandardSurface7
+    second: {fileID: 2100000, guid: b3373403316707e4b8dc5759db8b8ef9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface1
+    second: {fileID: 2100000, guid: f5b94e3491a2193488273c3b79790a66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface2
+    second: {fileID: 2100000, guid: ce677cc16467d4b43bf0643594fb67c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface3
+    second: {fileID: 2100000, guid: ccb9310606934134899e18461a6a757c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface4
+    second: {fileID: 2100000, guid: 60008641418be87428f4d391ba1e2ca3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: b4df27d83bd7f0c47b54ac78c6fd1f34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: 1bc1c6c594aa26d40a740fb9ad676c88, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -41,11 +116,11 @@ ModelImporter:
     sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -85,7 +160,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.089999996
+    globalScale: 9
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

@@ -6,25 +6,24 @@ namespace Valve.VR.InteractionSystem
 {
     public class MarkObject : MonoBehaviour
     {
+        [SerializeField] LineRenderer line;
+        [SerializeField] LayerMask checkLayer;
+
         private Player player = null;
 
         [Header("Miscellaneous")]
         public Transform controller;
 
         private GameObject selectedObject;
-        public GameObject markObjectUI;
-        private Canvas markObjectCanvas;
 
-        [SerializeField]
-        private GameObject steamVRTeleport;
+        [SerializeField] private GameObject steamVRTeleport;
+        [SerializeField] private GameObject snapTurn;
 
         [Header("SteamVR Input")]
         public SteamVR_Input_Sources hands;
         public SteamVR_Action_Boolean aButton;
         public SteamVR_Action_Vector2 joystickSelection;
         public SteamVR_Action_Boolean trigger;
-        public SteamVR_Action_Boolean turnLeft;
-        public SteamVR_Action_Boolean turnRight;
 
         [Header("Hints")]
         [SerializeField]
@@ -51,20 +50,20 @@ namespace Valve.VR.InteractionSystem
         private void Start()
         {
             player = Player.instance;
-            markObjectCanvas = markObjectUI.GetComponent<Canvas>();
 
             childCountRightHand = player.rightHand.gameObject.transform.childCount + 0;
             childCountLeftHand = player.leftHand.gameObject.transform.childCount + 0;
 
-            maxChildCountRightHand = 11;
+            maxChildCountRightHand = 12;
             maxChildCountLeftHand = 7;
+
         }
 
         private void Update()
         {
             if (selectedObject != null)
                 Debug.Log($"<b>markobject </b> Object state: {(objectState == null ? "null" : objectState.ToString())} Selected object: {selectedObject.name}");
-            
+
             Debug.Log($"<b>markobject </b> Right standard child count: {childCountRightHand} Right child count: {player.rightHand.gameObject.transform.childCount}");
             Debug.Log($"<b>markobject </b> Left standard child count: {childCountLeftHand} Left child count: {player.leftHand.gameObject.transform.childCount}");
 
@@ -77,7 +76,11 @@ namespace Valve.VR.InteractionSystem
                 objectInHand = objectState != null;
 
                 if (objectInHand)
+                {
+                    StaticVariables.joystickMovementActive = false;
                     steamVRTeleport.SetActive(false);
+                    snapTurn.SetActive(false);
+                }
             }
 
             if (player.leftHand.gameObject.transform.childCount != childCountLeftHand && !objectInHand)
@@ -88,7 +91,11 @@ namespace Valve.VR.InteractionSystem
                 objectInHand = objectState != null;
 
                 if (objectInHand)
+                {
+                    StaticVariables.joystickMovementActive = false;
                     steamVRTeleport.SetActive(false);
+                    snapTurn.SetActive(false);
+                }
             }
 
             if ((player.rightHand.transform.childCount == maxChildCountRightHand ||
@@ -101,10 +108,10 @@ namespace Valve.VR.InteractionSystem
                     player.leftHand.transform.childCount == maxChildCountLeftHand)
                 {
                     usedAButton = true;
-                    markObjectCanvas.enabled = true;
+                    StaticVariables.activateSelection = true;
                 }
 
-            if (markObjectCanvas.enabled && objectState != null)
+            if (StaticVariables.activateSelection && objectState != null)
             {
                 HideHint(aButton);
 
@@ -163,25 +170,21 @@ namespace Valve.VR.InteractionSystem
                     case "interesting":
                         objectState.MarkForInterest();
                         ResetStatus();
-                        markObjectCanvas.enabled = false;
                         break;
 
                     case "confiscate":
                         objectState.MarkForConfiscate();
                         ResetStatus();
-                        markObjectCanvas.enabled = false;
                         break;
 
                     case "specialist":
                         objectState.MarkForSpecialist();
                         ResetStatus();
-                        markObjectCanvas.enabled = false;
                         break;
 
                     case "nothing":
                         objectState.MarkForNothing();
                         ResetStatus();
-                        markObjectCanvas.enabled = false;
                         break;
 
                     case null:
@@ -206,9 +209,16 @@ namespace Valve.VR.InteractionSystem
         private void ResetStatus()
         {
             selection = "";
-            markObjectCanvas.enabled = false;
             objectInHand = false;
-            steamVRTeleport.SetActive(true);
+            StaticVariables.activateSelection = false;
+
+            if (StaticVariables.locomotionStatus == "teleport")
+            {
+                steamVRTeleport.SetActive(true);
+                snapTurn.SetActive(true);
+            }
+            else if (StaticVariables.locomotionStatus == "joystick")
+                StaticVariables.joystickMovementActive = true;
         }
     }
 }

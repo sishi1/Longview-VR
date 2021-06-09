@@ -18,7 +18,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cube_Cube.002Mat
-    second: {fileID: 2100000, guid: e2dc9df60af97264ba86ae915f8cb072, type: 2}
+    second: {fileID: 2100000, guid: ef137153330887642acf192297eb6518, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -60,7 +60,7 @@ ModelImporter:
     importLights: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
