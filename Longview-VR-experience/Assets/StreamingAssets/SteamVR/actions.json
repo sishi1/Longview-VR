@@ -94,6 +94,10 @@
       "type": "vector2"
     },
     {
+      "name": "/actions/default/in/ActivateGaze",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -224,7 +228,8 @@
       "/actions/default/in/TouchpadInput": "TouchpadInput",
       "/actions/default/in/TurnInput": "TurnInput",
       "/actions/default/in/ChangeLocomotion": "ChangeLocomotion",
-      "/actions/default/in/ChoiceLocomotion": "ChoiceLocomotion"
+      "/actions/default/in/ChoiceLocomotion": "ChoiceLocomotion",
+      "/actions/default/in/ActivateGaze": "ActivateGaze"
     }
   ]
 }
