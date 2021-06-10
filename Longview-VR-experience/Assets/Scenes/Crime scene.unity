@@ -152,11 +152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db30620e54282c4da59919bc5332618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  line: {fileID: 1083713757}
+  controller: {fileID: 510262196}
+  line: {fileID: 202749501}
   checkLayer:
     serializedVersion: 2
     m_Bits: 64
-  controller: {fileID: 510262196}
   steamVRTeleport: {fileID: 1499589906}
   snapTurn: {fileID: 566294251}
   hands: 0
@@ -168,6 +168,9 @@ MonoBehaviour:
     needsReinit: 0
   trigger:
     actionPath: /actions/default/in/FakeGrab
+    needsReinit: 0
+  grip:
+    actionPath: /actions/default/in/ActivateGaze
     needsReinit: 0
   openSelectionMenuHint: Open selection
   joystickSelectionHint: Move joystick
@@ -2748,6 +2751,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5022080828863645878, guid: 9460fcf87a920f34d9d285fdd9bd1527, type: 3}
   m_PrefabInstance: {fileID: 1700709193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!120 &202749501 stripped
+LineRenderer:
+  m_CorrespondingSourceObject: {fileID: 3545097898084955932, guid: cbfa8d9d5f60a0e4db7f267001c235a3, type: 3}
+  m_PrefabInstance: {fileID: 621438058}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &208935957 stripped
 Transform:
@@ -14064,11 +14072,6 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
---- !u!120 &1083713757 stripped
-LineRenderer:
-  m_CorrespondingSourceObject: {fileID: 3545097898084955932, guid: cbfa8d9d5f60a0e4db7f267001c235a3, type: 3}
-  m_PrefabInstance: {fileID: 621438058}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1083827359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17404,8 +17407,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430709004}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.5136311, y: 0, z: 0, w: 0.8580111}
+  m_LocalPosition: {x: 0, y: 0.172, z: 0.2155}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1529767392}
@@ -17414,7 +17417,7 @@ Transform:
   - {fileID: 910089347}
   m_Father: {fileID: 510262196}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -61.812, y: 0, z: 0}
 --- !u!1 &1438558848 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 1e97c559c3e38a04b93243a4c45b6b05, type: 3}
