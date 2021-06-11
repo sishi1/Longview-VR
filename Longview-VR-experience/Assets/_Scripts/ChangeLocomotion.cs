@@ -15,30 +15,26 @@ public class ChangeLocomotion : MonoBehaviour
     [SerializeField] private GameObject steamVRTeleport;
     [SerializeField] private GameObject snapTurn;
 
-    //[Header("Miscellaneous")]
-    //public GameObject locomotionUI;
-    //private Canvas locomotionCanvas;
-
     private bool activeTeleport = false;
+    private bool activateSwitch = false;
 
     private void Awake()
     {
         StaticVariables.locomotionStatus = "teleport";
     }
 
-    private void Start()
-    {
-        //locomotionCanvas = locomotionUI.GetComponent<Canvas>();
-    }
-
     private void Update()
     {
-        if (yButton.GetStateDown(leftHand))
-            SelectLocomotion();
-        //locomotionCanvas.enabled = true;
+        Debug.Log("Activate switch locomotion: " + StaticVariables.activateSwitchLocomotion);
 
-        //if (locomotionCanvas.enabled)
-        //    SelectLocomotion();
+        if (yButton.GetStateDown(leftHand))
+        {
+            StaticVariables.activateSwitchLocomotion = true;
+            activateSwitch = true;
+        }
+
+        if (activateSwitch)
+            SelectLocomotion();
 
         if (activeTeleport)
         {
@@ -52,22 +48,51 @@ public class ChangeLocomotion : MonoBehaviour
 
     }
 
+    private void SwitchLocomotion()
+    {
+        if (changeLocomotion.axis.x == 0 && changeLocomotion.axis.y == 0)
+        {
+            switch (StaticVariables.locomotionSwitchStatus)
+            {
+                case "walk":
+                    activeTeleport = true;
+                    StaticVariables.joystickMovementActive = true;
+                    StaticVariables.locomotionStatus = "joystick";
+                    ResetStatus();
+                    break;
+
+                case "teleport":
+                    activeTeleport = false;
+                    StaticVariables.joystickMovementActive = false;
+                    ResetStatus();
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    }
+
     private void SelectLocomotion()
     {
-        if (!StaticVariables.joystickMovementActive)
-        {
-            activeTeleport = true;
-            StaticVariables.joystickMovementActive = true;
-            StaticVariables.locomotionStatus = "joystick";
 
-        } else if (StaticVariables.joystickMovementActive)
+        //Walking
+        if (changeLocomotion.axis.x >= -0.82f && changeLocomotion.axis.x <= -0.55f && changeLocomotion.axis.y > 0.57f && changeLocomotion.axis.y <= 0.84f)
         {
-            activeTeleport = false;
-            StaticVariables.joystickMovementActive = false;
-            StaticVariables.locomotionStatus = "teleport";
+            StaticVariables.locomotionSwitchStatus = "walk";
+        }
+        //Teleporting
+        else if (changeLocomotion.axis.x >= -0.14f && changeLocomotion.axis.x < 0.55f && changeLocomotion.axis.y >= 0.84f && changeLocomotion.axis.y < 0.99f)
+        {
+            StaticVariables.locomotionSwitchStatus = "teleport";
         }
 
-        //Debug.Log("x-as: " + changeLocomotion.axis.x);
-        //Debug.Log("y-as: " + changeLocomotion.axis.y);
+        SwitchLocomotion();
+    }
+
+    private void ResetStatus()
+    {
+        activateSwitch = false;
+        StaticVariables.activateSwitchLocomotion = false;
     }
 }

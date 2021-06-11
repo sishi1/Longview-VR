@@ -43,5 +43,4 @@ namespace Valve.VR.InteractionSystem
             }
         }
     }
-
 }

@@ -48,11 +48,8 @@ namespace Valve.VR.InteractionSystem
         private bool objectHit = false;
         private bool activateGaze = false;
 
-        //Timer en seconds beginnen allebei met 0, want je wilt pas aftellen wanneer we onze raycast wijzen naar een object
         private float timer = 0f;
         private int seconds = 0;
-
-        //Deze variabel is anders. Hier heb ik het getal 5 neergezet. activationTime heeft dus een getal waarde van 5
         private int activationTime = 5;
 
         private void Start()
@@ -80,46 +77,28 @@ namespace Valve.VR.InteractionSystem
             {
                 line.enabled = true;
 
-                //Gaat kijken of er een collision plaatsvindt met een object
                 if (Physics.Raycast(controller.position, controller.forward, out RaycastHit hit, StaticVariables.lineLength, checkLayer))
                 {
                     Debug.Log(timer);
-
-                    //Telt langzamerhand in milliseconden omhoog
                     timer += Time.deltaTime;
 
-                    //Als de timer variabel 1 seconden heeft bereikt dan gaat het door naar de code in de { }
                     if (timer >= 1f)
                     {
-                        //Deze variabel staat iets bovenaan, maar het gaat telkens met 1 omhoog als de if statement hierboven op true staat
                         seconds++;
-
-                        //De timer wordt teruggezet op 0 zodat het vanaf het begin weer begint met tellen
                         timer = 0;
                     }
 
-                    //Zodra de seconden die we hebben geteld gelijk staat aan de variabel activationTime, dan gaan we door met de code in de { }
                     if (seconds >= activationTime)
                     {
-                        //selectedObject wordt gelijkgesteld aan het gameobject wat onze raycast heeft gevonden
                         selectedObject = hit.collider.gameObject;
-
-                        //objectState weet nu welk gameobject (bijvoorbeeld phone) hij naar de notebook kan sturen
                         objectState = selectedObject.GetComponent<ObjectState>();
-
-                        //Checkt of objectState wel een object heeft of niet
                         objectHit = objectState != null;
 
-                        //Als objectState een object heeft en dus niet null is, dan gaan we verder in de { }
                         if (objectHit)
                         {
-                            //Hier zetten we de selections aan (de layout die Kaj heeft gemaakt)
-                            StaticVariables.activateSelection = true;
-
-                            //Hiermee zorgen we ervoor dat we de layout kunnen selecteren a.d.h.v. onze joystick positie
+                            StaticVariables.activateMenuSelection = true;
                             JoystickSelection();
 
-                            //Dit allemaal zorgt ervoor dat we niet kunnen teleporteren, bewegen en draaien
                             StaticVariables.joystickMovementActive = false;
                             steamVRTeleport.SetActive(false);
                             snapTurn.SetActive(false);
@@ -127,7 +106,6 @@ namespace Valve.VR.InteractionSystem
                     }
                 }
                 else
-                    //Als de raycast niet meer met een object collide, dan resetten we alles om ervoor te zorgen dat we "fresh" van start gaan
                     ResetStatus();
             }
             else
@@ -139,6 +117,8 @@ namespace Valve.VR.InteractionSystem
 
                 Debug.Log($"<b>markobject </b> Right standard child count: {childCountRightHand} Right child count: {player.rightHand.gameObject.transform.childCount}");
                 Debug.Log($"<b>markobject </b> Left standard child count: {childCountLeftHand} Left child count: {player.leftHand.gameObject.transform.childCount}");
+
+                //Debug.Log($"<b>MarkObject </b> x-as: {joystickSelection.axis.x} y-as: {joystickSelection.axis.y}");
 
                 //Checks whether the player has an object in hand
                 if (player.rightHand.gameObject.transform.childCount != childCountRightHand && !objectInHand)
@@ -181,10 +161,10 @@ namespace Valve.VR.InteractionSystem
                         player.leftHand.transform.childCount == maxChildCountLeftHand)
                     {
                         usedAButton = true;
-                        StaticVariables.activateSelection = true;
+                        StaticVariables.activateMenuSelection = true;
                     }
 
-                if (StaticVariables.activateSelection && objectState != null)
+                if (StaticVariables.activateMenuSelection && objectState != null)
                 {
                     HideHint(aButton);
 
@@ -287,8 +267,8 @@ namespace Valve.VR.InteractionSystem
             timer = 0;
             seconds = 0;
 
-            if (StaticVariables.activateSelection)
-                StaticVariables.activateSelection = false;
+            if (StaticVariables.activateMenuSelection)
+                StaticVariables.activateMenuSelection = false;
 
             if (StaticVariables.locomotionStatus == "teleport")
             {

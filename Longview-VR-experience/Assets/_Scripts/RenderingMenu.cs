@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RenderingLayout : MonoBehaviour
+public class RenderingMenu : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
 
@@ -10,13 +10,13 @@ public class RenderingLayout : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.spriteRenderer = GetComponent<SpriteRenderer>();
+        this.spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (StaticVariables.activateSwitchLocomotion)
+        if (StaticVariables.activateMenuSelection)
             this.spriteRenderer.enabled = true;
         else
             this.spriteRenderer.enabled = false;
