@@ -38,19 +38,19 @@ namespace Valve.VR
                 {
                     notebookCanvas.enabled = true;
 
-                    textComponent.text = "<#FFFF00>" + "Interessant:" + "</color>" + "\n";
+                    textComponent.text = "<#000000>" + "Interessant:" + "</color>" + "\n";
                     foreach (string markedObject in markedObjectsForInterest)
                     {
                         textComponent.text += "- " + markedObject + "\n";
                     }
 
-                    textComponent.text += "\n" + "<#00FF00>" + "In beslag nemen:" + "</color>" + "\n";
+                    textComponent.text += "\n" + "<#000000>" + "In beslag nemen:" + "</color>" + "\n";
                     foreach (string markedObject in markedObjectsForConfiscate)
                     {
                         textComponent.text += "- " + markedObject + "\n";
                     }
 
-                    textComponent.text += "\n" + "<#00BEFF>" + "Specialist:" + "</color>" + "\n";
+                    textComponent.text += "\n" + "<#000000>" + "Specialist:" + "</color>" + "\n";
                     foreach (string markedObject in markedObjectsForSpecialist)
                     {
                         textComponent.text += "- " + markedObject + "\n";

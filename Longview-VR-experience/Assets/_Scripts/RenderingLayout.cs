@@ -14,7 +14,6 @@ namespace Valve.VR.InteractionSystem
         public GameObject layout;
         private SpriteRenderer spriteRenderer;
 
-        public GameObject player;
         private ChangeLocomotion changeLocomotion;
         private MarkObject markObject;
 
@@ -24,7 +23,7 @@ namespace Valve.VR.InteractionSystem
         void Start()
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
-            changeLocomotion = player.GetComponentInChildren<ChangeLocomotion>();
+            changeLocomotion = FindObjectOfType<ChangeLocomotion>();
             markObject = FindObjectOfType<MarkObject>();
         }
 
