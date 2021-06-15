@@ -13,9 +13,16 @@ public class PlayerController : MonoBehaviour
     [Header("Miscellaneous")]
     [SerializeField] float speed;
 
+    private ChangeLocomotion changeLocomotion;
+
+    private void Start()
+    {
+        changeLocomotion = FindObjectOfType<ChangeLocomotion>();
+    }
+
     private void Update()
     {
-        if (StaticVariables.joystickMovementActive)
+        if (changeLocomotion.currentLocomotion.ToString() == "Walk" && StaticVariables.joystickMovementActive)
         {
             Move();
 

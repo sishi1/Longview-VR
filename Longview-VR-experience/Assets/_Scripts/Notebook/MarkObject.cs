@@ -6,6 +6,7 @@ namespace Valve.VR.InteractionSystem
 {
     public class MarkObject : MonoBehaviour
     {
+        private ChangeLocomotion changeLocomotion;
         private Player player = null;
 
         [Header("Miscellaneous")]
@@ -16,26 +17,24 @@ namespace Valve.VR.InteractionSystem
 
         private GameObject selectedObject;
 
+        [Header("Game objects")]
         [SerializeField] private GameObject steamVRTeleport;
         [SerializeField] private GameObject snapTurn;
 
         [Header("SteamVR Input")]
         public SteamVR_Input_Sources hands;
-        public SteamVR_Action_Boolean aButton;
+        public VR.SteamVR_Action_Boolean aButton;
         public SteamVR_Action_Vector2 joystickSelection;
-        public SteamVR_Action_Boolean trigger;
-        public SteamVR_Action_Boolean grip;
+        public VR.SteamVR_Action_Boolean trigger;
+        public VR.SteamVR_Action_Boolean grip;
 
         [Header("Hints")]
-        [SerializeField]
-        private string openSelectionMenuHint;
-        [SerializeField]
-        private string joystickSelectionHint;
+        [SerializeField] private string openSelectionMenuHint;
+        [SerializeField] private string joystickSelectionHint;
 
-        [HideInInspector]
-        public ObjectState objectState;
-        [HideInInspector]
-        public string selection;
+        [HideInInspector] public ObjectState objectState;
+        [HideInInspector] public string selection;
+        [HideInInspector] public bool enableLayout;
 
         private int childCountRightHand;
         private int childCountLeftHand;
@@ -47,139 +46,139 @@ namespace Valve.VR.InteractionSystem
         private bool objectInHand = false;
         private bool objectHit = false;
         private bool activateGaze = false;
+        public bool enableFeedback = false;
 
         private float timer = 0f;
         private int seconds = 0;
-        private int activationTime = 5;
+        private int activationTime = 1;
 
         private void Start()
         {
+            changeLocomotion = FindObjectOfType<ChangeLocomotion>();
             player = Player.instance;
 
             childCountRightHand = player.rightHand.gameObject.transform.childCount + 0;
             childCountLeftHand = player.leftHand.gameObject.transform.childCount + 0;
 
             maxChildCountRightHand = 10;
-            maxChildCountLeftHand = 7;
+            maxChildCountLeftHand = 8;
         }
 
         private void Update()
         {
+            //Debug.Log($"<b>MarkObject</b> Enable layout: {enableLayout}");
+
             if (grip.GetStateDown(hands))
-            {
                 if (activateGaze)
                     activateGaze = false;
                 else
                     activateGaze = true;
-            }
 
             if (activateGaze)
+                GazeSystem();
+            else
+                GrabbingSystem();
+        }
+
+        private void GazeSystem()
+        {
+            line.enabled = true;
+
+            if (Physics.Raycast(controller.position, controller.forward, out RaycastHit hit, StaticVariables.lineLength, checkLayer))
             {
-                line.enabled = true;
+                enableFeedback = true;
+                timer += Time.deltaTime;
 
-                if (Physics.Raycast(controller.position, controller.forward, out RaycastHit hit, StaticVariables.lineLength, checkLayer))
+                if (timer >= 1f)
                 {
-                    Debug.Log(timer);
-                    timer += Time.deltaTime;
+                    seconds++;
+                    timer = 0;
+                }
 
-                    if (timer >= 1f)
+                if (seconds >= activationTime)
+                {
+                    selectedObject = hit.collider.gameObject;
+                    objectState = selectedObject.GetComponent<ObjectState>();
+                    objectHit = objectState != null;
+
+                    if (objectHit)
                     {
-                        seconds++;
-                        timer = 0;
-                    }
+                        enableLayout = true;
+                        enableFeedback = false;
+                        JoystickSelection();
 
-                    if (seconds >= activationTime)
-                    {
-                        selectedObject = hit.collider.gameObject;
-                        objectState = selectedObject.GetComponent<ObjectState>();
-                        objectHit = objectState != null;
-
-                        if (objectHit)
-                        {
-                            StaticVariables.activateMenuSelection = true;
-                            JoystickSelection();
-
-                            StaticVariables.joystickMovementActive = false;
-                            steamVRTeleport.SetActive(false);
-                            snapTurn.SetActive(false);
-                        }
+                        StaticVariables.joystickMovementActive = false;
+                        steamVRTeleport.SetActive(false);
+                        snapTurn.SetActive(false);
                     }
                 }
-                else
-                    ResetStatus();
             }
             else
+                ResetStatus();
+        }
+
+        private void GrabbingSystem()
+        {
+            line.enabled = false;
+
+            //if (selectedObject != null)
+            //    Debug.Log($"<b>markobject </b> Object state: {(objectState == null ? "null" : objectState.ToString())} Selected object: {selectedObject.name}");
+
+            //Debug.Log($"<b>markobject </b> Right standard child count: {childCountRightHand} Right child count: {player.rightHand.gameObject.transform.childCount}");
+            //Debug.Log($"<b>markobject </b> Left standard child count: {childCountLeftHand} Left child count: {player.leftHand.gameObject.transform.childCount}");
+
+            //Checks whether the player has an object in hand
+            if (player.rightHand.gameObject.transform.childCount != childCountRightHand && !objectInHand)
             {
-                line.enabled = false;
-
-                if (selectedObject != null)
-                    Debug.Log($"<b>markobject </b> Object state: {(objectState == null ? "null" : objectState.ToString())} Selected object: {selectedObject.name}");
-
-                Debug.Log($"<b>markobject </b> Right standard child count: {childCountRightHand} Right child count: {player.rightHand.gameObject.transform.childCount}");
-                Debug.Log($"<b>markobject </b> Left standard child count: {childCountLeftHand} Left child count: {player.leftHand.gameObject.transform.childCount}");
-
-                //Debug.Log($"<b>MarkObject </b> x-as: {joystickSelection.axis.x} y-as: {joystickSelection.axis.y}");
-
-                //Checks whether the player has an object in hand
-                if (player.rightHand.gameObject.transform.childCount != childCountRightHand && !objectInHand)
-                {
-                    //Attach the object in hand in the variable
-                    selectedObject = player.rightHand.transform.GetChild(player.rightHand.transform.childCount - 1).gameObject;
-                    objectState = selectedObject.GetComponent<ObjectState>();
-                    objectInHand = objectState != null;
-
-                    if (objectInHand)
-                    {
-                        StaticVariables.joystickMovementActive = false;
-                        steamVRTeleport.SetActive(false);
-                        snapTurn.SetActive(false);
-                    }
-                }
-
-                if (player.leftHand.gameObject.transform.childCount != childCountLeftHand && !objectInHand)
-                {
-                    //Attach the object in hand in the variable
-                    selectedObject = player.leftHand.transform.GetChild(player.leftHand.transform.childCount - 1).gameObject;
-                    objectState = selectedObject.GetComponent<ObjectState>();
-                    objectInHand = objectState != null;
-
-                    if (objectInHand)
-                    {
-                        StaticVariables.joystickMovementActive = false;
-                        steamVRTeleport.SetActive(false);
-                        snapTurn.SetActive(false);
-                    }
-                }
-
-                if ((player.rightHand.transform.childCount == maxChildCountRightHand ||
-                    player.leftHand.transform.childCount == maxChildCountLeftHand) && !usedAButton)
-                    OpenHint(aButton, openSelectionMenuHint);
-
-                //Two buttons can't be true at the same time, hence why trigger state is false since that's the first button that was activated and becomes false
-                if (aButton.GetStateDown(hands) && !trigger.GetStateDown(hands))
-                    if (player.rightHand.transform.childCount == maxChildCountRightHand ||
-                        player.leftHand.transform.childCount == maxChildCountLeftHand)
-                    {
-                        usedAButton = true;
-                        StaticVariables.activateMenuSelection = true;
-                    }
-
-                if (StaticVariables.activateMenuSelection && objectState != null)
-                {
-                    HideHint(aButton);
-
-                    if (!usedJoystick)
-                        OpenHint(joystickSelection, joystickSelectionHint);
-
-                    JoystickSelection();
-                }
-
-                //Reset everything when you stop holding an object in hand
-                if (!aButton.GetStateDown(hands) && !trigger.GetStateDown(hands))
-                    if (player.rightHand.transform.childCount != maxChildCountRightHand &&
-                        player.leftHand.transform.childCount != maxChildCountLeftHand)
-                        ResetStatus();
+                //Attach the object in hand in the variable
+                selectedObject = player.rightHand.transform.GetChild(player.rightHand.transform.childCount - 1).gameObject;
+                objectState = selectedObject.GetComponent<ObjectState>();
+                objectInHand = objectState != null;
             }
+
+            if (player.leftHand.gameObject.transform.childCount != childCountLeftHand && !objectInHand)
+            {
+                //Attach the object in hand in the variable
+                selectedObject = player.leftHand.transform.GetChild(player.leftHand.transform.childCount - 1).gameObject;
+                objectState = selectedObject.GetComponent<ObjectState>();
+                objectInHand = objectState != null;
+            }
+
+            if (objectInHand)
+            {
+                StaticVariables.joystickMovementActive = false;
+                steamVRTeleport.SetActive(false);
+                snapTurn.SetActive(false);
+            }
+
+            if ((player.rightHand.transform.childCount == maxChildCountRightHand ||
+                player.leftHand.transform.childCount == maxChildCountLeftHand) && !usedAButton)
+                OpenHint(aButton, openSelectionMenuHint);
+
+            //Two buttons can't be true at the same time, hence why trigger state is false since that's the first button that was activated and becomes false
+            if (aButton.GetStateDown(hands) && !trigger.GetStateDown(hands))
+                if (player.rightHand.transform.childCount == maxChildCountRightHand ||
+                    player.leftHand.transform.childCount == maxChildCountLeftHand)
+                {
+                    usedAButton = true;
+                    enableLayout = true;
+                }
+
+            if (enableLayout && objectState != null)
+            {
+                HideHint(aButton);
+
+                if (!usedJoystick)
+                    OpenHint(joystickSelection, joystickSelectionHint);
+
+                JoystickSelection();
+            }
+
+            //Reset everything when you stop holding an object in hand
+            if (!aButton.GetStateDown(hands) && !trigger.GetStateDown(hands))
+                if (player.rightHand.transform.childCount != maxChildCountRightHand &&
+                    player.leftHand.transform.childCount != maxChildCountLeftHand)
+                    ResetStatus();
         }
 
         private void JoystickSelection()
@@ -187,25 +186,25 @@ namespace Valve.VR.InteractionSystem
             //left/ask specialist
             if (joystickSelection.axis.x >= -1f && joystickSelection.axis.x < -0.2f && joystickSelection.axis.y >= -0.71f && joystickSelection.axis.y < 0.71f)
             {
-                selection = "specialist";
+                selection = "Specialist";
                 usedJoystick = true;
             }
             //top/interesting
             else if (joystickSelection.axis.x >= -0.71f && joystickSelection.axis.x <= 0.71f && joystickSelection.axis.y > 0.2f && joystickSelection.axis.y <= 1f)
             {
-                selection = "interesting";
+                selection = "Interesting";
                 usedJoystick = true;
             }
             //right/confiscate
             else if (joystickSelection.axis.x <= 1f && joystickSelection.axis.x > 0.2f && joystickSelection.axis.y >= -0.71f && joystickSelection.axis.y < 0.71f)
             {
-                selection = "confiscate";
+                selection = "Confiscate";
                 usedJoystick = true;
             }
             //bottom/nothing
             else if (joystickSelection.axis.x <= 0.71f && joystickSelection.axis.x > -0.71f && joystickSelection.axis.y >= -1f && joystickSelection.axis.y < -0.2f)
             {
-                selection = "nothing";
+                selection = "Nothing";
                 usedJoystick = true;
             }
 
@@ -221,22 +220,22 @@ namespace Valve.VR.InteractionSystem
             {
                 switch (selection)
                 {
-                    case "interesting":
+                    case "Interesting":
                         objectState.MarkForInterest();
                         ResetStatus();
                         break;
 
-                    case "confiscate":
+                    case "Confiscate":
                         objectState.MarkForConfiscate();
                         ResetStatus();
                         break;
 
-                    case "specialist":
+                    case "Specialist":
                         objectState.MarkForSpecialist();
                         ResetStatus();
                         break;
 
-                    case "nothing":
+                    case "Nothing":
                         objectState.MarkForNothing();
                         ResetStatus();
                         break;
@@ -264,18 +263,20 @@ namespace Valve.VR.InteractionSystem
         {
             selection = "";
             objectInHand = false;
+            objectHit = false;
+
             timer = 0;
             seconds = 0;
 
-            if (StaticVariables.activateMenuSelection)
-                StaticVariables.activateMenuSelection = false;
+            enableFeedback = false;
+            enableLayout = false;
 
-            if (StaticVariables.locomotionStatus == "teleport")
+            if (changeLocomotion.currentLocomotion.ToString() == "Teleport")
             {
                 steamVRTeleport.SetActive(true);
                 snapTurn.SetActive(true);
             }
-            else if (StaticVariables.locomotionStatus == "joystick")
+            else if (changeLocomotion.currentLocomotion.ToString() == "Walk")
                 StaticVariables.joystickMovementActive = true;
         }
     }

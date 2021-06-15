@@ -28,10 +28,10 @@ namespace Valve.VR.InteractionSystem
             foreach (Hand hand in player.hands)
             {
                 if (StaticVariables.doorUsed)
-                    ControllerButtonHints.HideTextHint(hand, openDoorButton);
+                    ControllerButtonHints.HideTextHint(hand, (ISteamVR_Action_In_Source)openDoorButton);
 
                 if (StaticVariables.noteBookUsed)
-                    ControllerButtonHints.HideTextHint(hand, notebookButton);
+                    ControllerButtonHints.HideTextHint(hand, (ISteamVR_Action_In_Source)notebookButton);
 
             }
         }
@@ -40,13 +40,13 @@ namespace Valve.VR.InteractionSystem
         {
             //Show the hint on each eligible hand
             foreach (Hand hand in player.hands)
-                ControllerButtonHints.ShowTextHint(hand, openDoorButton, hintText);
+                ControllerButtonHints.ShowTextHint(hand, (ISteamVR_Action_In_Source)openDoorButton, hintText);
         }
 
         private void NotebookHint()
         {
             foreach (Hand hand in player.hands)
-                ControllerButtonHints.ShowTextHint(hand, notebookButton, hintText);
+                ControllerButtonHints.ShowTextHint(hand, (ISteamVR_Action_In_Source)notebookButton, hintText);
         }
 
 
