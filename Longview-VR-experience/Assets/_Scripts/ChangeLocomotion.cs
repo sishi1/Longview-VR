@@ -9,6 +9,8 @@ public class ChangeLocomotion : MonoBehaviour
     [SerializeField] public enum Locomotion { Walk, Teleport, None };
     public Locomotion currentLocomotion;
 
+    private GuideUser guideUser;
+
     [Header("SteamVR Input")]
     public SteamVR_Input_Sources leftHand;
     public SteamVR_Action_Boolean yButton;
@@ -19,11 +21,11 @@ public class ChangeLocomotion : MonoBehaviour
     [SerializeField] private GameObject snapTurn;
 
     [HideInInspector] public bool enableLayout = false;
-    [HideInInspector] public bool enableWalking = false;
 
     private void Start()
     {
         currentLocomotion = Locomotion.Teleport;
+        guideUser = FindObjectOfType<GuideUser>();
     }
 
     private void Update()
@@ -32,7 +34,11 @@ public class ChangeLocomotion : MonoBehaviour
         {
             currentLocomotion = Locomotion.None;
             enableLayout = true;
-            Debug.Log($"<b>ChangeLocomotion</b> Y Button pressed: {"PRESSING BUTTON FURIOUSCOULY"}");
+            TutorialManager.endIntro = true;
+            TutorialManager.isExplainingSwitchLocomotion = true;
+
+            if (TutorialManager.hasExplainedJoystick || TutorialManager.hasExplainedTeleport)
+                TutorialManager.isExplainingSwitchLocomotion = false;
         }
 
         if (enableLayout)
@@ -71,13 +77,26 @@ public class ChangeLocomotion : MonoBehaviour
             {
                 case Locomotion.Walk:
                     DisableTeleport();
-                    Debug.Log($"<b>ChangeLocomotion</b> Y Button released: {"PRESSING BUTTON FURIOUSCOULY"}");
                     enableLayout = false;
+                    if (TutorialManager.hasExplainedJoystick && !TutorialManager.isExplainingSwitchLocomotion)
+                        break;
+
+                    DisableGuide();
+                    TutorialManager.isExplainingJoystick = true;
+                    TutorialManager.isExplainingTeleport = false;
+
                     break;
                 case Locomotion.Teleport:
                     EnableTeleport();
-                    Debug.Log($"<b>ChangeLocomotion</b> Y Button released: {"PRESSING BUTTON FURIOUSCOULY"}");
                     enableLayout = false;
+
+                    if (TutorialManager.hasExplainedTeleport && !TutorialManager.isExplainingSwitchLocomotion)
+                        break;
+
+                    DisableGuide();
+                    TutorialManager.isExplainingJoystick = false;
+                    TutorialManager.isExplainingTeleport = true;
+
                     break;
             }
         }
@@ -93,5 +112,12 @@ public class ChangeLocomotion : MonoBehaviour
     {
         steamVRTeleport.SetActive(false);
         snapTurn.SetActive(false);
+    }
+
+    private void DisableGuide()
+    {
+        TutorialManager.isExplainingSwitchLocomotion = false;
+        TutorialManager.hasExplainedJoystick = true;
+        TutorialManager.hasExplainedTeleport = true;
     }
 }

@@ -32,8 +32,6 @@ namespace Valve.VR
         {
             if (bButton.GetStateDown(rightHand))
             {
-                StaticVariables.noteBookUsed = true;
-
                 if (!notebookCanvas.enabled)
                 {
                     notebookCanvas.enabled = true;
@@ -57,7 +55,16 @@ namespace Valve.VR
                     }
                 }
                 else
+                {
                     notebookCanvas.enabled = false;
+
+                    if (!TutorialManager.hasExplainedNotebook)
+                    {
+                        TutorialManager.isExplainingNotebook = false;
+                        TutorialManager.hasExplainedNotebook = true;
+                        TutorialManager.endTutorial = true;
+                    }
+                }
             }
         }
     }

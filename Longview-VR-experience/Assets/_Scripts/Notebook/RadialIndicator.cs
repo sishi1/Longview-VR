@@ -11,11 +11,13 @@ namespace Valve.VR.InteractionSystem
 
         [Header("UI")]
         [SerializeField] private Image radialIndicatorUI = null;
-        public GameObject layout;
+        [SerializeField] private GameObject layout;
         private Canvas canvas;
 
         private float indicatorTimer;
-        private float defaultTime = 0f;
+        private readonly float defaultTime = 0f;
+        private readonly float resetFill = 0f;
+        private readonly float endTime = 1f;
 
         private void Start()
         {
@@ -33,7 +35,7 @@ namespace Valve.VR.InteractionSystem
                 radialIndicatorUI.fillAmount = indicatorTimer;
                 indicatorTimer += Time.deltaTime;
 
-                if (indicatorTimer >= 1f)
+                if (indicatorTimer >= endTime)
                     ResetStatus();
             }
             else
@@ -42,7 +44,7 @@ namespace Valve.VR.InteractionSystem
 
         private void ResetStatus()
         {
-            radialIndicatorUI.fillAmount = 0f;
+            radialIndicatorUI.fillAmount = resetFill;
             indicatorTimer = defaultTime;
             radialIndicatorUI.enabled = false;
             canvas.enabled = false;

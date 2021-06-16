@@ -24,7 +24,9 @@ public class PlayerController : MonoBehaviour
     {
         if (changeLocomotion.currentLocomotion.ToString() == "Walk" && StaticVariables.joystickMovementActive)
         {
-            Move();
+            //Threshhold to start moving, but also to prevent the guide to disappear instantly
+            if (touchpadInput.axis.y > 0.2f || touchpadInput.axis.y < -0.2f)
+                Move();
 
             //Threshold to start turning
             if (turnInput.axis.x > 0.2f || turnInput.axis.x < -0.2f)
@@ -41,6 +43,8 @@ public class PlayerController : MonoBehaviour
         Vector3 movementDirection = Player.instance.hmdTransform.TransformDirection(new Vector3(0, 0, touchpadInput.axis.y));
         //Execute the movement based on input, speed and time
         transform.position += Vector3.ProjectOnPlane(Time.deltaTime * movementDirection * speed, Vector3.up);
+
+        TutorialManager.isExplainingJoystick = false;
     }
 
     private void Turn()

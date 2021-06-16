@@ -46,11 +46,11 @@ namespace Valve.VR.InteractionSystem
         private bool objectInHand = false;
         private bool objectHit = false;
         private bool activateGaze = false;
-        public bool enableFeedback = false;
+        [HideInInspector] public bool enableFeedback = false;
 
         private float timer = 0f;
         private int seconds = 0;
-        private int activationTime = 1;
+        private readonly int activationTime = 1;
 
         private void Start()
         {
@@ -66,8 +66,6 @@ namespace Valve.VR.InteractionSystem
 
         private void Update()
         {
-            //Debug.Log($"<b>MarkObject</b> Enable layout: {enableLayout}");
-
             if (grip.GetStateDown(hands))
                 if (activateGaze)
                     activateGaze = false;
@@ -75,7 +73,16 @@ namespace Valve.VR.InteractionSystem
                     activateGaze = true;
 
             if (activateGaze)
+            {
+                if (!TutorialManager.hasExplainedIntroGaze)
+                {
+                    TutorialManager.isExplainingIntroGaze = false;
+                    TutorialManager.hasExplainedIntroGaze = true;
+                    TutorialManager.isExplainingGazeSystem = true;
+                }
+
                 GazeSystem();
+            }
             else
                 GrabbingSystem();
         }
@@ -124,8 +131,6 @@ namespace Valve.VR.InteractionSystem
             //if (selectedObject != null)
             //    Debug.Log($"<b>markobject </b> Object state: {(objectState == null ? "null" : objectState.ToString())} Selected object: {selectedObject.name}");
 
-            //Debug.Log($"<b>markobject </b> Right standard child count: {childCountRightHand} Right child count: {player.rightHand.gameObject.transform.childCount}");
-            //Debug.Log($"<b>markobject </b> Left standard child count: {childCountLeftHand} Left child count: {player.leftHand.gameObject.transform.childCount}");
 
             //Checks whether the player has an object in hand
             if (player.rightHand.gameObject.transform.childCount != childCountRightHand && !objectInHand)
@@ -146,6 +151,13 @@ namespace Valve.VR.InteractionSystem
 
             if (objectInHand)
             {
+                if (!TutorialManager.hasExplainedGrabbingSystem)
+                {
+                    TutorialManager.isExplainingInteractionSystem = false;
+                    TutorialManager.hasExplainedInteractionSystem = true;
+                    TutorialManager.isExplainingGrabbingSystem = true;
+                }
+
                 StaticVariables.joystickMovementActive = false;
                 steamVRTeleport.SetActive(false);
                 snapTurn.SetActive(false);
@@ -222,21 +234,25 @@ namespace Valve.VR.InteractionSystem
                 {
                     case "Interesting":
                         objectState.MarkForInterest();
+                        DisableGuides();
                         ResetStatus();
                         break;
 
                     case "Confiscate":
                         objectState.MarkForConfiscate();
+                        DisableGuides();
                         ResetStatus();
                         break;
 
                     case "Specialist":
                         objectState.MarkForSpecialist();
+                        DisableGuides();
                         ResetStatus();
                         break;
 
                     case "Nothing":
                         objectState.MarkForNothing();
+                        DisableGuides();
                         ResetStatus();
                         break;
 
@@ -257,6 +273,29 @@ namespace Valve.VR.InteractionSystem
         {
             foreach (Hand hand in player.hands)
                 ControllerButtonHints.HideTextHint(hand, action);
+        }
+
+        private void DisableGuides()
+        {
+            if (activateGaze)
+            {
+                if (!TutorialManager.hasExplainedGazeSystem)
+                {
+                    TutorialManager.isExplainingGazeSystem = false;
+                    TutorialManager.hasExplainedGazeSystem = true;
+                    TutorialManager.isExplainingNotebook = true;
+                }
+            }
+            else
+            {
+                if (!TutorialManager.hasExplainedGrabbingSystem)
+                {
+                    TutorialManager.isExplainingGrabbingSystem = false;
+                    TutorialManager.hasExplainedGrabbingSystem = true;
+                    TutorialManager.isExplainingIntroGaze = true;
+                }
+            }
+
         }
 
         private void ResetStatus()

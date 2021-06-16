@@ -6,18 +6,17 @@ namespace Valve.VR.InteractionSystem
 {
     public class RenderingLayout : MonoBehaviour
     {
+        private enum Layout { Locomotion, MarkingObjects, None};
+        private Layout currentLayout;
+
         [Header("Gameobject UI")]
         [SerializeField] private GameObject switchLocomotion;
         [SerializeField] private GameObject markGameObject;
 
-        [Header("UI")]
-        public GameObject layout;
         private SpriteRenderer spriteRenderer;
 
         private ChangeLocomotion changeLocomotion;
         private MarkObject markObject;
-
-        private string whichLayout = "";
 
         // Start is called before the first frame update
         void Start()
@@ -25,38 +24,41 @@ namespace Valve.VR.InteractionSystem
             spriteRenderer = GetComponent<SpriteRenderer>();
             changeLocomotion = FindObjectOfType<ChangeLocomotion>();
             markObject = FindObjectOfType<MarkObject>();
+            currentLayout = Layout.None;
         }
 
         // Update is called once per frame
         void Update()
         {
-            Debug.Log($"<b>RenderingLayout</b> Change locomotion: {changeLocomotion.enableLayout} MarkObject: {markObject.enableLayout}");
-
             if (changeLocomotion.enableLayout)
-                whichLayout = "Locomotion";
+                currentLayout = Layout.Locomotion;
             else if (markObject.enableLayout)
-                whichLayout = "MarkObjects";
+                currentLayout = Layout.MarkingObjects;
             else
-                whichLayout = "";
+                currentLayout = Layout.None;
 
-            switch (whichLayout)
+            switch (currentLayout)
             {
-                case "Locomotion":
+                case Layout.Locomotion:
                     markGameObject.SetActive(false);
                     switchLocomotion.SetActive(true);
                     spriteRenderer.enabled = true;
                     break;
 
-                case "MarkObjects":
+                case Layout.MarkingObjects:
                     markGameObject.SetActive(true);
                     switchLocomotion.SetActive(false);
                     spriteRenderer.enabled = true;
                     break;
 
-                default:
+                case Layout.None:
                     markGameObject.SetActive(true);
                     switchLocomotion.SetActive(true);
                     spriteRenderer.enabled = false;
+                    break;
+
+                default:
+                    Debug.LogErrorFormat("Something went wrong in the switch statement", currentLayout);
                     break;
             }
         }
