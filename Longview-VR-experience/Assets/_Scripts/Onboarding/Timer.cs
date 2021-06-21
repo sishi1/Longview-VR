@@ -10,7 +10,7 @@ public class Timer : MonoBehaviour
     private float value;
     private readonly float defaultValue = 0f;
     private readonly float endTime = 1f;
-    private readonly float waitTime = 1f / 5f;
+    private readonly float waitTime = 1f / 8f;
 
     private void Start()
     {
@@ -21,8 +21,6 @@ public class Timer : MonoBehaviour
     {
         if (TutorialManager.endTutorial)
         {
-            Debug.Log(value);
-
             image.enabled = true;
             image.fillAmount = value;
             value += waitTime * Time.deltaTime;

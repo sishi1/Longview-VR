@@ -282,6 +282,15 @@
                },
                "mode" : "joystick",
                "path" : "/user/hand/left/input/joystick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/activategaze"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/x"
             }
          ]
       },

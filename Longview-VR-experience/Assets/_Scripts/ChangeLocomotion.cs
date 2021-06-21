@@ -9,8 +9,6 @@ public class ChangeLocomotion : MonoBehaviour
     [SerializeField] public enum Locomotion { Walk, Teleport, None };
     public Locomotion currentLocomotion;
 
-    private GuideUser guideUser;
-
     [Header("SteamVR Input")]
     public SteamVR_Input_Sources leftHand;
     public SteamVR_Action_Boolean yButton;
@@ -25,7 +23,6 @@ public class ChangeLocomotion : MonoBehaviour
     private void Start()
     {
         currentLocomotion = Locomotion.Teleport;
-        guideUser = FindObjectOfType<GuideUser>();
     }
 
     private void Update()

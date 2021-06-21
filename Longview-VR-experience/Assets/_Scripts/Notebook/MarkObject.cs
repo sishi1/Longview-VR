@@ -23,10 +23,10 @@ namespace Valve.VR.InteractionSystem
 
         [Header("SteamVR Input")]
         public SteamVR_Input_Sources hands;
-        public VR.SteamVR_Action_Boolean aButton;
+        public SteamVR_Action_Boolean aButton;
         public SteamVR_Action_Vector2 joystickSelection;
-        public VR.SteamVR_Action_Boolean trigger;
-        public VR.SteamVR_Action_Boolean grip;
+        public SteamVR_Action_Boolean trigger;
+        public SteamVR_Action_Boolean xButton;
 
         [Header("Hints")]
         [SerializeField] private string openSelectionMenuHint;
@@ -66,7 +66,7 @@ namespace Valve.VR.InteractionSystem
 
         private void Update()
         {
-            if (grip.GetStateDown(hands))
+            if (xButton.GetStateDown(hands))
                 if (activateGaze)
                     activateGaze = false;
                 else
@@ -127,10 +127,6 @@ namespace Valve.VR.InteractionSystem
         private void GrabbingSystem()
         {
             line.enabled = false;
-
-            //if (selectedObject != null)
-            //    Debug.Log($"<b>markobject </b> Object state: {(objectState == null ? "null" : objectState.ToString())} Selected object: {selectedObject.name}");
-
 
             //Checks whether the player has an object in hand
             if (player.rightHand.gameObject.transform.childCount != childCountRightHand && !objectInHand)
