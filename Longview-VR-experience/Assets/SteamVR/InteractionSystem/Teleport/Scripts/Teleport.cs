@@ -138,6 +138,8 @@ namespace Valve.VR.InteractionSystem
 			}
 		}
 
+		public static bool teleported = false;
+
 
 		//-------------------------------------------------
 		void Awake()
@@ -906,6 +908,7 @@ namespace Valve.VR.InteractionSystem
 				teleportingToMarker.TeleportPlayer( pointedAtPosition );
 			}
 
+			teleported = true;
 			Teleport.Player.Send( pointedAtTeleportMarker );
 		}
 
@@ -993,10 +996,10 @@ namespace Valve.VR.InteractionSystem
 					{
 						if ( !isShowingHint )
 						{
-							ControllerButtonHints.ShowTextHint( hand, teleportAction, "Teleport" );
-							prevBreakTime = Time.time;
-							prevHapticPulseTime = Time.time;
-						}
+                            //ControllerButtonHints.ShowTextHint(hand, teleportAction, "Beweeg joystick\n om te lopen/teleporteren");
+                            //prevBreakTime = Time.time;
+                            //prevHapticPulseTime = Time.time;
+                        }
 
 						if ( Time.time > prevHapticPulseTime + 0.05f )
 						{
@@ -1008,8 +1011,8 @@ namespace Valve.VR.InteractionSystem
 					}
 					else if ( !showHint && isShowingHint )
 					{
-						ControllerButtonHints.HideTextHint( hand, teleportAction);
-					}
+                        //ControllerButtonHints.HideTextHint(hand, teleportAction);
+                    }
 				}
 
 				if ( Time.time > prevBreakTime + 3.0f )

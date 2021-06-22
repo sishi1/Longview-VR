@@ -6,42 +6,40 @@ namespace Valve.VR.InteractionSystem
 {
     public class SelectionHover : MonoBehaviour
     {
-        public GameObject objectHightlight;
+        private ChangeLocomotion changeLocomotion;
         private MarkObject markObject;
-        private Transform t;
-        private bool hovered;
+        private Transform layout;
 
+        [Header("Selection type")]
         public bool interesting;
         public bool confiscate;
         public bool specialist;
         public bool nothing;
 
+        [Header("Locomotion type")]
+        public bool walk;
+        public bool teleport;
+
         void Start()
         {
-            markObject = objectHightlight.GetComponent<MarkObject>();
-            t = GetComponent<Transform>();
+            changeLocomotion = FindObjectOfType<ChangeLocomotion>();
+            markObject = FindObjectOfType<MarkObject>();
+            layout = GetComponent<Transform>();
         }
 
         void Update()
         {
-            if ((interesting && markObject.selection == "interesting") ||
-                (confiscate && markObject.selection == "confiscate") ||
-                (specialist && markObject.selection == "specialist") ||
-                (nothing && markObject.selection == "nothing"))
+            if ((interesting && markObject.selection == "Interesting") ||
+                (confiscate && markObject.selection == "Confiscate") ||
+                (specialist && markObject.selection == "Specialist") ||
+                (nothing && markObject.selection == "Nothing") ||
+                (walk && changeLocomotion.currentLocomotion.ToString() == "Walk") ||
+                (teleport && changeLocomotion.currentLocomotion.ToString() == "Teleport"))
             {
-                hovered = true;
-                t.localScale = new Vector2(0.07f, 0.07f);
+                layout.localScale = new Vector2(0.07f, 0.07f);
             }
-            else if (hovered)
-            {
-                hovered = false;
-            }
-
-            if (!hovered)
-            {
-                t.localScale = new Vector2(0.05f, 0.05f);
-            }
+            else
+                layout.localScale = new Vector2(0.05f, 0.05f);
         }
     }
-
 }

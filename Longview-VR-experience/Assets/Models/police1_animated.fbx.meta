@@ -6,7 +6,87 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CH_Hair_Col
+    second: {fileID: 2100000, guid: 4f55d01bce40e5f44a7faf366f1030f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_LifeJacket1
+    second: {fileID: 2100000, guid: 1e98492cf28934849bd8aa9e3efa2400, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Pants1
+    second: {fileID: 2100000, guid: c48aa2c588f8f1b4eba4a33d4b98f595, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Scene_2_Eye_Iris_Mat
+    second: {fileID: 2100000, guid: 0972bc895b5f68949b6c30a82cc13914, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Scene_2_aiStandardSurface2
+    second: {fileID: 2100000, guid: 9d750e677d969a446b50f573f1639a89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Shirt1
+    second: {fileID: 2100000, guid: 5391ecb0bc557f4418f53a4946d5e595, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_aiStandardSurface4
+    second: {fileID: 2100000, guid: 80e5342275dcbbb49892b891e3b7b378, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_aiStandardSurface5
+    second: {fileID: 2100000, guid: 3a2621272414df147922f6feee887ecd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_aiStandardSurface6
+    second: {fileID: 2100000, guid: 627f47a8eaa55fa43ade921ab7ec2023, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_aiStandardSurface7
+    second: {fileID: 2100000, guid: fd396e66fd655484e94d4c25f873f21d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface1
+    second: {fileID: 2100000, guid: d6ec893a9aaf12c43807c767928fc4e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface2
+    second: {fileID: 2100000, guid: 99baeab63eef9a64a85c19ac0da80848, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface3
+    second: {fileID: 2100000, guid: 3f4483aa2043c3b43b1478e5e36ce67f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface4
+    second: {fileID: 2100000, guid: ccf550799467cf74eaaa27d4b8143693, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: 1fcb927a500ba3c43bdd5cbcdd8dd87f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: e6540a2370dd1c34390da438fe6e0348, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -66,7 +146,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 11
+    globalScale: 12.5
     meshCompression: 0
     addColliders: 1
     useSRGBMaterialColor: 1
@@ -117,7 +197,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 11
+    globalScale: 12.5
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

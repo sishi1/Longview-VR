@@ -9,7 +9,7 @@ namespace Valve.VR.InteractionSystem
         private Player player = null;
         [Header("SteamVR Input")]
         public SteamVR_Input_Sources hands;
-        public SteamVR_Action_Boolean trigger;
+        public VR.SteamVR_Action_Boolean trigger;
 
         [SerializeField] private Animator doorAnim;
 
