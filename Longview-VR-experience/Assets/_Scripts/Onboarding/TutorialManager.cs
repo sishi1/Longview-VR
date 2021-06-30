@@ -30,5 +30,6 @@ public class TutorialManager
     public static bool hasExplainedNotebook = false;
 
     public static bool endTutorial = false;
+    public static bool startTimer = false;
 
 }

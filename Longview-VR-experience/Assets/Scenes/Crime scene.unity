@@ -5171,7 +5171,6 @@ GameObject:
   - component: {fileID: 342639242}
   - component: {fileID: 342639241}
   - component: {fileID: 342639240}
-  - component: {fileID: 342639239}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5200,31 +5199,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &342639239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342639237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b52e77256ba9eb44da3eb11a0a0d0173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentGuide: 0
-  introduction: {fileID: 523478595}
-  switchLocomotion: {fileID: 2047268404}
-  joystick: {fileID: 169481940}
-  teleport: {fileID: 1897645779}
-  interactionSystem: {fileID: 1239961257}
-  grabbingSystem: {fileID: 792875295}
-  introGaze: {fileID: 904224484}
-  gazeSystem: {fileID: 790244012}
-  notebook: {fileID: 1015962226}
-  end: {fileID: 1086545755}
-  image: {fileID: 1036685431}
-  text: {fileID: 1899805251}
 --- !u!114 &342639240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7690,7 +7664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &523478596
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11182,7 +11156,6 @@ GameObject:
   - component: {fileID: 758748253}
   - component: {fileID: 758748252}
   - component: {fileID: 758748251}
-  - component: {fileID: 758748254}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -11272,31 +11245,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &758748254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758748249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b52e77256ba9eb44da3eb11a0a0d0173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentGuide: 0
-  introduction: {fileID: 523478595}
-  switchLocomotion: {fileID: 2047268404}
-  joystick: {fileID: 169481940}
-  teleport: {fileID: 1897645779}
-  interactionSystem: {fileID: 1239961257}
-  grabbingSystem: {fileID: 792875295}
-  introGaze: {fileID: 904224484}
-  gazeSystem: {fileID: 790244012}
-  notebook: {fileID: 1015962226}
-  end: {fileID: 1086545755}
-  image: {fileID: 1683909673}
-  text: {fileID: 768601284}
 --- !u!1 &762553135 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5211782598800362618, guid: d37c84bfb8ca47345bab04e1a6c622c5, type: 3}
@@ -12664,6 +12612,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 809373948}
+  - component: {fileID: 809373949}
+  - component: {fileID: 809373950}
   m_Layer: 0
   m_Name: Guides
   m_TagString: Untagged
@@ -12695,6 +12645,43 @@ Transform:
   m_Father: {fileID: 963213189}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &809373949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809373947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b52e77256ba9eb44da3eb11a0a0d0173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentGuide: 0
+  tutorialCanvas:
+  - {fileID: 523478595}
+  - {fileID: 2047268404}
+  - {fileID: 1897645779}
+  - {fileID: 169481940}
+  - {fileID: 1239961257}
+  - {fileID: 792875295}
+  - {fileID: 904224484}
+  - {fileID: 790244012}
+  - {fileID: 1015962226}
+  - {fileID: 1086545755}
+--- !u!114 &809373950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809373947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89cd947799730c4e8f972873a92dfff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 796313708}
 --- !u!1001 &818599973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12946,7 +12933,6 @@ GameObject:
   - component: {fileID: 838020768}
   - component: {fileID: 838020767}
   - component: {fileID: 838020766}
-  - component: {fileID: 838020765}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -12975,31 +12961,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &838020765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 838020763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b52e77256ba9eb44da3eb11a0a0d0173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentGuide: 0
-  introduction: {fileID: 523478595}
-  switchLocomotion: {fileID: 2047268404}
-  joystick: {fileID: 169481940}
-  teleport: {fileID: 1897645779}
-  interactionSystem: {fileID: 1239961257}
-  grabbingSystem: {fileID: 792875295}
-  introGaze: {fileID: 904224484}
-  gazeSystem: {fileID: 790244012}
-  notebook: {fileID: 1015962226}
-  end: {fileID: 1086545755}
-  image: {fileID: 634863411}
-  text: {fileID: 1272705453}
 --- !u!114 &838020766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13275,7 +13236,6 @@ GameObject:
   - component: {fileID: 842858414}
   - component: {fileID: 842858413}
   - component: {fileID: 842858412}
-  - component: {fileID: 842858411}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -13304,31 +13264,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &842858411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 842858409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b52e77256ba9eb44da3eb11a0a0d0173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentGuide: 0
-  introduction: {fileID: 523478595}
-  switchLocomotion: {fileID: 2047268404}
-  joystick: {fileID: 169481940}
-  teleport: {fileID: 1897645779}
-  interactionSystem: {fileID: 1239961257}
-  grabbingSystem: {fileID: 792875295}
-  introGaze: {fileID: 904224484}
-  gazeSystem: {fileID: 790244012}
-  notebook: {fileID: 1015962226}
-  end: {fileID: 1086545755}
-  image: {fileID: 408106111}
-  text: {fileID: 379789906}
 --- !u!114 &842858412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16535,7 +16470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1086545756
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18595,7 +18530,6 @@ GameObject:
   - component: {fileID: 1264424382}
   - component: {fileID: 1264424381}
   - component: {fileID: 1264424380}
-  - component: {fileID: 1264424383}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -18685,31 +18619,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1264424383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1264424378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b52e77256ba9eb44da3eb11a0a0d0173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentGuide: 0
-  introduction: {fileID: 523478595}
-  switchLocomotion: {fileID: 2047268404}
-  joystick: {fileID: 169481940}
-  teleport: {fileID: 1897645779}
-  interactionSystem: {fileID: 1239961257}
-  grabbingSystem: {fileID: 792875295}
-  introGaze: {fileID: 904224484}
-  gazeSystem: {fileID: 790244012}
-  notebook: {fileID: 1015962226}
-  end: {fileID: 1086545755}
-  image: {fileID: 309449647}
-  text: {fileID: 555457730}
 --- !u!1 &1272705451
 GameObject:
   m_ObjectHideFlags: 0
@@ -19446,7 +19355,6 @@ GameObject:
   - component: {fileID: 1316931048}
   - component: {fileID: 1316931047}
   - component: {fileID: 1316931046}
-  - component: {fileID: 1316931045}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -19475,31 +19383,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1316931045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316931043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b52e77256ba9eb44da3eb11a0a0d0173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentGuide: 0
-  introduction: {fileID: 523478595}
-  switchLocomotion: {fileID: 2047268404}
-  joystick: {fileID: 169481940}
-  teleport: {fileID: 1897645779}
-  interactionSystem: {fileID: 1239961257}
-  grabbingSystem: {fileID: 792875295}
-  introGaze: {fileID: 904224484}
-  gazeSystem: {fileID: 790244012}
-  notebook: {fileID: 1015962226}
-  end: {fileID: 1086545755}
-  image: {fileID: 1855839121}
-  text: {fileID: 767973852}
 --- !u!114 &1316931046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20803,7 +20686,6 @@ GameObject:
   - component: {fileID: 1442324373}
   - component: {fileID: 1442324372}
   - component: {fileID: 1442324371}
-  - component: {fileID: 1442324370}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -20832,31 +20714,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1442324370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442324368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b52e77256ba9eb44da3eb11a0a0d0173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentGuide: 0
-  introduction: {fileID: 523478595}
-  switchLocomotion: {fileID: 2047268404}
-  joystick: {fileID: 169481940}
-  teleport: {fileID: 1897645779}
-  interactionSystem: {fileID: 1239961257}
-  grabbingSystem: {fileID: 792875295}
-  introGaze: {fileID: 904224484}
-  gazeSystem: {fileID: 790244012}
-  notebook: {fileID: 1015962226}
-  end: {fileID: 1086545755}
-  image: {fileID: 1660540413}
-  text: {fileID: 1651686473}
 --- !u!114 &1442324371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24138,7 +23995,6 @@ GameObject:
   - component: {fileID: 1721671794}
   - component: {fileID: 1721671793}
   - component: {fileID: 1721671792}
-  - component: {fileID: 1721671791}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -24167,31 +24023,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1721671791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721671789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b52e77256ba9eb44da3eb11a0a0d0173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentGuide: 0
-  introduction: {fileID: 523478595}
-  switchLocomotion: {fileID: 2047268404}
-  joystick: {fileID: 169481940}
-  teleport: {fileID: 1897645779}
-  interactionSystem: {fileID: 1239961257}
-  grabbingSystem: {fileID: 792875295}
-  introGaze: {fileID: 904224484}
-  gazeSystem: {fileID: 790244012}
-  notebook: {fileID: 1015962226}
-  end: {fileID: 1086545755}
-  image: {fileID: 2124161958}
-  text: {fileID: 1058727226}
 --- !u!114 &1721671792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24265,8 +24096,6 @@ GameObject:
   - component: {fileID: 1727791599}
   - component: {fileID: 1727791598}
   - component: {fileID: 1727791597}
-  - component: {fileID: 1727791596}
-  - component: {fileID: 1727791600}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -24296,31 +24125,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1727791596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727791594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b52e77256ba9eb44da3eb11a0a0d0173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentGuide: 0
-  introduction: {fileID: 523478595}
-  switchLocomotion: {fileID: 2047268404}
-  joystick: {fileID: 169481940}
-  teleport: {fileID: 1897645779}
-  interactionSystem: {fileID: 1239961257}
-  grabbingSystem: {fileID: 792875295}
-  introGaze: {fileID: 904224484}
-  gazeSystem: {fileID: 790244012}
-  notebook: {fileID: 1015962226}
-  end: {fileID: 1086545755}
-  image: {fileID: 1956911287}
-  text: {fileID: 826665255}
 --- !u!114 &1727791597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24382,19 +24186,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1727791600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727791594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b89cd947799730c4e8f972873a92dfff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 796313708}
 --- !u!1001 &1736681399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26813,7 +26604,6 @@ GameObject:
   - component: {fileID: 1979835539}
   - component: {fileID: 1979835538}
   - component: {fileID: 1979835537}
-  - component: {fileID: 1979835536}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -26842,31 +26632,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1979835536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979835534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b52e77256ba9eb44da3eb11a0a0d0173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentGuide: 0
-  introduction: {fileID: 523478595}
-  switchLocomotion: {fileID: 2047268404}
-  joystick: {fileID: 169481940}
-  teleport: {fileID: 1897645779}
-  interactionSystem: {fileID: 1239961257}
-  grabbingSystem: {fileID: 792875295}
-  introGaze: {fileID: 904224484}
-  gazeSystem: {fileID: 790244012}
-  notebook: {fileID: 1015962226}
-  end: {fileID: 1086545755}
-  image: {fileID: 1826390581}
-  text: {fileID: 2127741950}
 --- !u!114 &1979835537
 MonoBehaviour:
   m_ObjectHideFlags: 0

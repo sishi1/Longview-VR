@@ -19,7 +19,7 @@ public class Timer : MonoBehaviour
 
     private void Update()
     {
-        if (TutorialManager.endTutorial)
+        if (TutorialManager.startTimer)
         {
             image.enabled = true;
             image.fillAmount = value;
